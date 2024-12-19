@@ -1,0 +1,35 @@
+@model VehicleView
+
+@{
+    ViewData["Title"] = "Vehicle Details";
+}
+
+<div class="container">
+    <h3 class="text-center">@Model.Make @Model.Model (@Model.Year)</h3>
+    <hr />
+
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+            <h4 class="text-uppercase color-primary">Details</h4>
+            <p><strong>Make:</strong> @Model.Make</p>
+            <p><strong>Model:</strong> @Model.Model</p>
+            <p><strong>Year:</strong> @Model.Year</p>
+            <p><strong>Type:</strong> @Model.VehicleType</p>
+            <p><strong>Availability:</strong> @(Model.Availability ? "Available" : "Unavailable")</p>
+            <p><strong>Price:</strong> @Model.Price Euro/day</p>
+        </div>
+        <div class="col-md-6">
+            <img src="data:image/jpeg;base64,@Model.VehicleImage" alt="Vehicle Image" class="img-fluid shadow-lg" />
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <a href="/Vehicle/Index" class="btn btn-outline-secondary">Back to List</a>
+            @if (Model.Availability)
+            {
+                <a href="#" class="btn btn-danger">Book Vehicle</a>
+            }
+        </div>
+    </div>
+</div>
