@@ -6,6 +6,16 @@ using MvcMovieFrontOffice.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddSingleton(new DatabaseHelper(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<VehicleService>(_ => new VehicleService(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ReservationService>(_ => new ReservationService(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen(c =>
@@ -40,11 +50,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-builder.Services.AddScoped<VehicleService>();
-builder.Services.AddScoped<ReservationService>();
-
-builder.Services.AddDbContext<ApplicationDbContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// builder.Services.AddScoped<VehicleService>();
+//builder.Services.AddScoped<ReservationService>();
 
 builder.Services.AddIdentity<Users, IdentityRole>(options =>
 {
@@ -92,6 +99,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Vehicle}/{action=Index}/{id?}");
 
 app.Run();

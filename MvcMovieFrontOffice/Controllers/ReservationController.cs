@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +9,7 @@ using MvcMovieFrontOffice.Services;
 namespace MvcMovieFrontOffice.Controllers;
 
 [Authorize]
-public class ReservationController(ReservationService reservationService) : Controller
+public class ReservationController(ReservationService reservationService, VehicleService vehicleService) : Controller
 {
     public async Task<IActionResult> Index()
     {
@@ -31,17 +33,44 @@ public class ReservationController(ReservationService reservationService) : Cont
         return View(reservation);
     }
 
-    public IActionResult Create()
+    public async Task<IActionResult> Create(int id)
     {
-        return View();
+        var vehicle = await vehicleService.GetVehicleViewByIdAsync(id);
+        var reservation = new ReservationViewModel
+        {
+            Reservation = new Reservation
+            {
+                VehicleId = id,
+                UserId = GetCurrentUserId(),
+                Status = "pending",
+                TotalPrice = vehicle.Price,
+                StartDate = DateTime.Today,
+                EndDate = DateTime.Today.AddDays(1)
+            },
+            VehicleView = vehicle
+        };
+        
+        reservation.Reservation.TotalPrice = vehicle?.Price ?? 0;
+        
+        return View(reservation);
+    }
+    
+    private string? GetCurrentUserId()
+    {
+        return User.FindFirstValue(ClaimTypes.NameIdentifier);
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,VehicleId,UserId,StartDate,EndDate,Status,TotalPrice,CreatedAt,UpdatedAt")] Reservation reservation)
+    public async Task<IActionResult> Create([Bind("Reservation")] ReservationViewModel reservationViewModel)
     {
-        if (!ModelState.IsValid) return View(reservation);
-        await reservationService.CreateReservationAsync(reservation);
+        if (!ModelState.IsValid)
+        {
+            var vehicle = await vehicleService.GetVehicleViewByIdAsync(reservationViewModel.Reservation.VehicleId);
+            reservationViewModel.VehicleView = vehicle;
+            // return View(reservationViewModel);
+        }
+        await reservationService.CreateReservationAsync(reservationViewModel.Reservation);
         return RedirectToAction(nameof(Index));
 
     }

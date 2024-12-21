@@ -1,65 +1,164 @@
-@model MvcMovieFrontOffice.Models.Reservation
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model MvcMovieFrontOffice.Models.ReservationViewModel
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1 class="text-center">Create Reservation</h1>
 
-<h4>Reservation</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create">
+            <input type="hidden" asp-for="Reservation.VehicleId" />
+            <input type="hidden" asp-for="Reservation.UserId" />
+            <input type="hidden" asp-for="Reservation.Status" class="form-control" />
+            <input type="hidden" name="VehicleView.VehicleImage" value="@Model.VehicleView?.VehicleImage" />
+            <input type="hidden" name="VehicleView.Make" value="@Model.VehicleView?.Make" />
+            <input type="hidden" name="VehicleView.Model" value="@Model.VehicleView?.Model" />
+            <input type="hidden" name="VehicleView.Year" value="@Model.VehicleView?.Year" />
+            <input type="hidden" name="VehicleView.VehicleImage" value="@Model.VehicleView?.Availability" />
+            <input type="hidden" name="VehicleView.Make" value="@Model.VehicleView?.Price" />
+            <input type="hidden" name="VehicleView.Model" value="@Model.VehicleView?.CreatedAt" />
+            <input type="hidden" name="VehicleView.Year" value="@Model.VehicleView?.UpdatedAt" />
+            <input type="hidden" name="VehicleView.VehicleImage" value="@Model.VehicleView?.VehicleImageId" />
+            <input type="hidden" name="VehicleView.Make" value="@Model.VehicleView?.VehicleId" />
+            <input type="hidden" name="VehicleView.Model" value="@Model.VehicleView?.VehicleType" />
+            <input type="hidden" name="VehicleView.Year" value="@Model.VehicleView?.VehicleTypeId" />
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="VehicleId" class="control-label"></label>
-                <input asp-for="VehicleId" class="form-control" />
-                <span asp-validation-for="VehicleId" class="text-danger"></span>
+            <div class="custom-calendar">
+                <div class="container-calendar">
+                    <div class="calendar light">
+                        <div class="calendar_header">
+                            <h1 class="header_title color-primary">Start Date</h1>
+                            <p class="header_copy"> Calendar Plan</p>
+                        </div>
+                        <div class="calendar_plan">
+                            <div class="cl_plan">
+                                <div class="cl_copy">
+                                    <input asp-for="Reservation.StartDate" id="startDateInput" class="form-control"/>
+                                    <span asp-validation-for="Reservation.StartDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar_events">
+                            <p class="ce_title">Upcoming Events</p>
+                            <div class="event_item">
+                                <div class="ei_Dot dot_active"></div>
+                                <div class="ei_Title" id="startEventTime">10:30 am</div>
+                                <div class="ei_Copy" id="startEventDate">Monday briefing with the team</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar dark">
+                        <div class="calendar_header">
+                            <h1 class="header_title color-primary">End Date</h1>
+                            <p class="header_copy"> Calendar Plan</p>
+                        </div>
+                        <div class="calendar_plan">
+                            <div class="cl_plan">
+                                <div class="cl_copy">
+                                    <input asp-for="Reservation.EndDate" id="endDateInput" class="form-control"/>
+                                    <span asp-validation-for="Reservation.EndDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar_events">
+                            <p class="ce_title">Upcoming Events</p>
+                            <div class="event_item">
+                                <div class="ei_Dot dot_active"></div>
+                                <div class="ei_Title" id="endEventTime">10:30 am</div>
+                                <div class="ei_Copy" id="endEventDate">Monday briefing with the team</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
+
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
+                <label asp-for="Reservation.TotalPrice" class="control-label">Total Price</label> (Euro)
+                <input asp-for="Reservation.TotalPrice" class="form-control mt-2" readonly/>
+                <span asp-validation-for="Reservation.TotalPrice" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="StartDate" class="control-label"></label>
-                <input asp-for="StartDate" class="form-control" />
-                <span asp-validation-for="StartDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" />
-                <span asp-validation-for="EndDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
-                <span asp-validation-for="Status" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TotalPrice" class="control-label"></label>
-                <input asp-for="TotalPrice" class="form-control" />
-                <span asp-validation-for="TotalPrice" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CreatedAt" class="control-label"></label>
-                <input asp-for="CreatedAt" class="form-control" />
-                <span asp-validation-for="CreatedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UpdatedAt" class="control-label"></label>
-                <input asp-for="UpdatedAt" class="form-control" />
-                <span asp-validation-for="UpdatedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group mt-4">
+                <input type="submit" value="Create" class="btn btn-danger" style="width: 50%"/>
             </div>
         </form>
     </div>
+    <div class="col-md-6 text-center">
+        <h4 class="text-uppercase color-primary">Vehicle</h4>
+        <img src="data:image/jpeg;base64,@Model.VehicleView.VehicleImage" alt="Vehicle Image" class="img-fluid shadow-lg" />
+        <p class="mt-3"><strong>Make:</strong> @Model.VehicleView.Make @Model.VehicleView.Model - @Model.VehicleView.Year (@Model.VehicleView.Price Euro/day)</p>
+    </div>
 </div>
 
-<div>
+<div class="mt-3">
     <a asp-action="Index">Back to List</a>
 </div>
 
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("startDateInput").addEventListener("change", calculateTotalPrice);
+        document.getElementById("endDateInput").addEventListener("change", calculateTotalPrice);
+
+        function calculateTotalPrice() {
+            const startDateInput = document.getElementById("startDateInput").value;
+            const endDateInput = document.getElementById("endDateInput").value;
+            const totalPriceInput = document.querySelector("input[name='Reservation.TotalPrice']");
+
+            const vehiclePrice = @((Model.VehicleView?.Price ?? 0).ToString(CultureInfo.InvariantCulture));
+
+            const startDate = new Date(startDateInput);
+            const endDate = new Date(endDateInput);
+
+            if (startDate && endDate && !isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+                const diffTime = endDate - startDate;
+                const days = Math.max(1, diffTime / (1000 * 60 * 60 * 24));
+                totalPriceInput.value = (days * vehiclePrice);
+            } else {
+                totalPriceInput.value = "Invalid Dates";
+            }
+        }
+    });
+    
+    function updateEvent(inputId, timeId, dateId) {
+        const inputElement = document.getElementById(inputId);
+        const timeElement = document.getElementById(timeId);
+        const dateElement = document.getElementById(dateId);
+
+        function updateDisplay() {
+            const dateValue = new Date(inputElement.value);
+            if (!isNaN(dateValue.getTime())) {
+                const hours = dateValue.getHours();
+                const minutes = dateValue.getMinutes();
+                const formattedTime = `${hours % 12 || 12}:${minutes.toString().padStart(2, "0")} ${
+                    hours >= 12 ? "pm" : "am"
+                }`;
+                
+                const options = { year: "numeric", month: "long", day: "numeric" };
+                const formattedDate = dateValue.toLocaleDateString(undefined, options);
+                
+                timeElement.textContent = formattedTime;
+                dateElement.textContent = formattedDate;
+            } else {
+                timeElement.textContent = "Invalid Time";
+                dateElement.textContent = "Invalid Date";
+            }
+        }
+        
+        inputElement.addEventListener("input", updateDisplay);
+        
+        updateDisplay();
+    }
+    
+    updateEvent("startDateInput", "startEventTime", "startEventDate");
+    updateEvent("endDateInput", "endEventTime", "endEventDate");
+
+</script>

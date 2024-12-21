@@ -8,7 +8,7 @@ public class VehicleView(
     string make,
     int year,
     bool availability,
-    double price,
+    int price,
     DateTime createdAt,
     DateTime updatedAt,
     int vehicleTypeId,
@@ -24,7 +24,7 @@ public class VehicleView(
     public int Year { get; set; } = year;
     public bool Availability { get; set; } = availability;
 
-    public double Price { get; set; } = price;
+    public int Price { get; set; } = price;
     public DateTime CreatedAt { get; set; } = createdAt;
     public DateTime UpdatedAt { get; set; } = updatedAt;
 

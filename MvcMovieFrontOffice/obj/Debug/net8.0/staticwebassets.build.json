@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UH5E7qkBUhpLBWLEJOJ+9Wqi5uONPX65fRhSFg7Bnus=",
+  "Hash": "65BylfWfRmd1ERANXy516GClox37lpldjS04jVHs5+E=",
   "Source": "MvcMovieFrontOffice",
   "BasePath": "_content/MvcMovieFrontOffice",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/account.css"
+    },
+    {
+      "Identity": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/calendar.css",
+      "SourceId": "MvcMovieFrontOffice",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/",
+      "BasePath": "_content/MvcMovieFrontOffice",
+      "RelativePath": "css/calendar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/calendar.css"
     },
     {
       "Identity": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/site.css",

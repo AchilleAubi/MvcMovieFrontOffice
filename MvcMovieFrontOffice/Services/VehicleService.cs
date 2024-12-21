@@ -1,94 +1,282 @@
-using Microsoft.EntityFrameworkCore;
-using MvcMovieFrontOffice.Data;
+using System.Data;
+using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using MvcMovieFrontOffice.Models;
 
 namespace MvcMovieFrontOffice.Services;
 
-public class VehicleService(ApplicationDbContext context)
+public class VehicleService(string? connectionString)
 {
-    private readonly ApplicationDbContext _context = context ?? throw new ArgumentNullException(nameof(context));
+    private readonly string _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
 
     public async Task<List<Vehicle>> GetVehiclesAsync()
     {
-        var vehicles = await _context.Vehicles.ToListAsync();
-        return vehicles; 
+        var vehicles = new List<Vehicle>();
+        var query = "SELECT * FROM Vehicles";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vehicles.Add(new Vehicle(
+                        id: reader.GetInt32("Id"),
+                        model: reader.GetString("Model"),
+                        make: reader.GetString("Make"),
+                        year: reader.GetInt32("Year"),
+                        availability: reader.IsDBNull("Availability") ? (bool?)null : reader.GetBoolean("Availability"),
+                        typeId: reader.GetInt32("TypeId"),
+                        price: reader.GetInt32("Price"),
+                        createdAt: reader.IsDBNull("CreatedAt") ? (DateTime?)null : reader.GetDateTime("CreatedAt"),
+                        updatedAt: reader.IsDBNull("UpdatedAt") ? (DateTime?)null : reader.GetDateTime("UpdatedAt")
+                    ));
+                }
+            }
+        }
+
+        return vehicles;
     }
 
     public async Task<List<VehicleView>> GetVehiclesViewAsync(int offset, int limit, string? model = null, string? make = null, string? vehicleType = null, bool? availability = null)
     {
-        var query = _context.VehicleView.AsQueryable();
+        var vehicles = new List<VehicleView>();
+        var query = @"SELECT * FROM VehicleView 
+                      WHERE (@Model IS NULL OR Model LIKE '%' + @Model + '%') 
+                        AND (@Make IS NULL OR Make LIKE '%' + @Make + '%') 
+                        AND (@VehicleType IS NULL OR VehicleType = @VehicleType) 
+                        AND (@Availability IS NULL OR Availability = @Availability)
+                      ORDER BY VehicleId
+                      OFFSET @Offset ROWS FETCH NEXT @Limit ROWS ONLY";
 
-        if (!string.IsNullOrEmpty(make))
-            query = query.Where(v => v.Make.Contains(make));
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Model", (object?)model ?? DBNull.Value);
+            command.Parameters.AddWithValue("@Make", (object?)make ?? DBNull.Value);
+            command.Parameters.AddWithValue("@VehicleType", (object?)vehicleType ?? DBNull.Value);
+            command.Parameters.AddWithValue("@Availability", (object?)availability ?? DBNull.Value);
+            command.Parameters.AddWithValue("@Offset", offset);
+            command.Parameters.AddWithValue("@Limit", limit);
 
-        if (!string.IsNullOrEmpty(model))
-            query = query.Where(v => v.Model.Contains(model));
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vehicles.Add(new VehicleView(
+                        vehicleId: reader.GetInt32("VehicleId"),
+                        model: reader.GetString("Model"),
+                        make: reader.GetString("Make"),
+                        year: reader.GetInt32("Year"),
+                        availability: reader.GetBoolean("Availability"),
+                        price: reader.GetInt32("Price"),
+                        createdAt: reader.GetDateTime("CreatedAt"),
+                        updatedAt: reader.GetDateTime("UpdatedAt"),
+                        vehicleTypeId: reader.GetInt32("VehicleTypeId"),
+                        vehicleType: reader.GetString("VehicleType"),
+                        vehicleImageId: reader.GetInt32("VehicleImageId"),
+                        vehicleImage: reader.GetString("VehicleImage")
+                    ));
+                }
+            }
+        }
 
-        if (!string.IsNullOrEmpty(vehicleType))
-            query = query.Where(v => v.VehicleType == vehicleType);
-
-        if (availability.HasValue)
-            query = query.Where(v => v.Availability == availability.Value);
-
-        return await query
-            .OrderBy(v => v.VehicleId)
-            .Skip(offset)
-            .Take(limit)
-            .ToListAsync();
+        return vehicles;
     }
 
     public async Task<int> GetTotalVehicleViewCountAsync(string? model = null, string? make = null, string? vehicleType = null, bool? availability = null)
     {
-        return await _context.VehicleView
-            .Where(v => (string.IsNullOrEmpty(make) || v.Make.Contains(make)) &&
-                        (string.IsNullOrEmpty(model) || v.Model.Contains(model)) &&
-                        (string.IsNullOrEmpty(vehicleType) || v.VehicleType == vehicleType) &&
-                        (!availability.HasValue || v.Availability == availability.Value))
-            .CountAsync();
+        var query = @"SELECT COUNT(*) FROM VehicleView 
+                      WHERE (@Model IS NULL OR Model LIKE '%' + @Model + '%') 
+                        AND (@Make IS NULL OR Make LIKE '%' + @Make + '%') 
+                        AND (@VehicleType IS NULL OR VehicleType = @VehicleType) 
+                        AND (@Availability IS NULL OR Availability = @Availability)";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Model", (object?)model ?? DBNull.Value);
+            command.Parameters.AddWithValue("@Make", (object?)make ?? DBNull.Value);
+            command.Parameters.AddWithValue("@VehicleType", (object?)vehicleType ?? DBNull.Value);
+            command.Parameters.AddWithValue("@Availability", (object?)availability ?? DBNull.Value);
+
+            await connection.OpenAsync();
+            return (int)await command.ExecuteScalarAsync();
+        }
     }
 
     public async Task<VehicleView> GetVehicleViewByIdAsync(int id)
     {
-        var vehicle = await _context.VehicleView
-            .FirstOrDefaultAsync(v => v.VehicleId == id);
-        return vehicle!;
+        Console.WriteLine($"Query Parameter: Id = {id}");
+
+        var query = "SELECT * FROM VehicleView WHERE VehicleId = @Id";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Id", id);
+
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                if (await reader.ReadAsync())
+                {
+                    return new VehicleView(
+                        vehicleId: reader.GetInt32("VehicleId"),
+                        model: reader.GetString("Model"),
+                        make: reader.GetString("Make"),
+                        year: reader.GetInt32("Year"),
+                        availability: reader.GetBoolean("Availability"),
+                        price: reader.GetInt32("Price"),
+                        createdAt: reader.GetDateTime("CreatedAt"),
+                        updatedAt: reader.GetDateTime("UpdatedAt"),
+                        vehicleTypeId: reader.GetInt32("VehicleTypeId"),
+                        vehicleType: reader.GetString("VehicleType"),
+                        vehicleImageId: reader.GetInt32("VehicleImageId"),
+                        vehicleImage: reader.GetString("VehicleImage")
+                    );
+                }
+            }
+        }
+
+        throw new KeyNotFoundException("VehicleView not found.");
     }
-    
+
     public async Task<Vehicle> GetVehicleByIdAsync(int id)
     {
-        var vehicle = await _context.Vehicles
-            .FirstOrDefaultAsync(v => v.Id == id);
-        return vehicle!;
+        var query = "SELECT * FROM Vehicles WHERE Id = @Id";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Id", id);
+
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                if (await reader.ReadAsync())
+                {
+                    return new Vehicle(
+                        id: reader.GetInt32("Id"),
+                        model: reader.GetString("Model"),
+                        make: reader.GetString("Make"),
+                        year: reader.GetInt32("Year"),
+                        availability: reader.IsDBNull("Availability") ? (bool?)null : reader.GetBoolean("Availability"),
+                        typeId: reader.GetInt32("TypeId"),
+                        price: reader.GetInt32("Price"),
+                        createdAt: reader.IsDBNull("CreatedAt") ? (DateTime?)null : reader.GetDateTime("CreatedAt"),
+                        updatedAt: reader.IsDBNull("UpdatedAt") ? (DateTime?)null : reader.GetDateTime("UpdatedAt")
+                    );
+                }
+            }
+        }
+
+        throw new KeyNotFoundException("Vehicle not found.");
     }
 
     public async Task<List<string>> GetVehicleTypesAsync()
     {
-        return await _context.VehicleTypes
-            .Select(vt => vt.Name)
-            .ToListAsync();
+        var vehicleTypes = new List<string>();
+        var query = "SELECT Name FROM VehicleTypes";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vehicleTypes.Add(reader.GetString("Name"));
+                }
+            }
+        }
+
+        return vehicleTypes;
     }
 
     public async Task<List<object>> GetVehicleTypesWithIdsAsync()
     {
-        return await _context.VehicleTypes
-            .Select(vt => new { vt.Id, vt.Name })
-            .ToListAsync<object>();
+        var vehicleTypes = new List<object>();
+        var query = "SELECT Id, Name FROM VehicleTypes";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vehicleTypes.Add(new { Id = reader.GetInt32("Id"), Name = reader.GetString("Name") });
+                }
+            }
+        }
+
+        return vehicleTypes;
     }
-    
+
     public async Task CreateVehicleAsync(Vehicle vehicle)
     {
-        _context.Add(vehicle);
-        await _context.SaveChangesAsync();
+        var query = @"INSERT INTO Vehicles (Model, Make, Year, Availability, TypeId, Price, CreatedAt, UpdatedAt) 
+                      VALUES (@Model, @Make, @Year, @Availability, @TypeId, @Price, @CreatedAt, @UpdatedAt)";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Model", vehicle.Model);
+            command.Parameters.AddWithValue("@Make", vehicle.Make);
+            command.Parameters.AddWithValue("@Year", vehicle.Year);
+            command.Parameters.AddWithValue("@Availability", (object?)vehicle.Availability ?? DBNull.Value);
+            command.Parameters.AddWithValue("@TypeId", vehicle.TypeId);
+            command.Parameters.AddWithValue("@Price", vehicle.Price);
+            command.Parameters.AddWithValue("@CreatedAt", (object?)vehicle.CreatedAt ?? DBNull.Value);
+            command.Parameters.AddWithValue("@UpdatedAt", (object?)vehicle.UpdatedAt ?? DBNull.Value);
+
+            await connection.OpenAsync();
+            await command.ExecuteNonQueryAsync();
+        }
     }
 
     public async Task UpdateVehicleAsync(Vehicle vehicle)
     {
-        _context.Update(vehicle);
-        await _context.SaveChangesAsync();
+        var query = @"UPDATE Vehicles 
+                      SET Model = @Model, Make = @Make, Year = @Year, Availability = @Availability, 
+                          TypeId = @TypeId, Price = @Price, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt 
+                      WHERE Id = @Id";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Id", vehicle.Id);
+            command.Parameters.AddWithValue("@Model", vehicle.Model);
+            command.Parameters.AddWithValue("@Make", vehicle.Make);
+            command.Parameters.AddWithValue("@Year", vehicle.Year);
+            command.Parameters.AddWithValue("@Availability", (object?)vehicle.Availability ?? DBNull.Value);
+            command.Parameters.AddWithValue("@TypeId", vehicle.TypeId);
+            command.Parameters.AddWithValue("@Price", vehicle.Price);
+            command.Parameters.AddWithValue("@CreatedAt", (object?)vehicle.CreatedAt ?? DBNull.Value);
+            command.Parameters.AddWithValue("@UpdatedAt", (object?)vehicle.UpdatedAt ?? DBNull.Value);
+
+            await connection.OpenAsync();
+            await command.ExecuteNonQueryAsync();
+        }
     }
-    
+
     public bool VehicleExist(int id)
     {
-        return _context.Vehicles.Any(v => v.Id == id);
+        var query = "SELECT COUNT(*) FROM Vehicles WHERE Id = @Id";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Id", id);
+
+            connection.Open();
+            return (int)command.ExecuteScalar() > 0;
+        }
     }
 }

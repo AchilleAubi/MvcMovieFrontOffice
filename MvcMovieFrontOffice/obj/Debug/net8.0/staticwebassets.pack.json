@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/account.css"
     },
     {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/calendar.css",
+      "PackagePath": "staticwebassets/css/calendar.css"
+    },
+    {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
