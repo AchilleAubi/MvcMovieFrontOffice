@@ -15,6 +15,7 @@ builder.Services.AddSingleton(new DatabaseHelper(builder.Configuration.GetConnec
 
 builder.Services.AddScoped<VehicleService>(_ => new VehicleService(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ReservationService>(_ => new ReservationService(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<InvoiceService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

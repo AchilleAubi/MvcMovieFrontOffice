@@ -13,9 +13,6 @@
                 @Html.DisplayNameFor(model => model.VehicleId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.StartDate)
             </th>
             <th>
@@ -27,12 +24,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.TotalPrice)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedAt)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,9 +32,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.VehicleId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
@@ -58,15 +46,12 @@
                 @Html.DisplayFor(modelItem => item.TotalPrice)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CreatedAt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedAt)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                @if (item.Status == "pending")
+                {
+                    <a asp-action="Edit" asp-route-id="@item.Id"> Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id"> Delete</a>
+                }
             </td>
         </tr>
 }

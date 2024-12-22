@@ -40,6 +40,23 @@ public class ReservationService(string? connectionString)
 
         return null;
     }
+    
+    public async Task<List<Reservation>> GetReservationsByIdUserAsync(string? id)
+    {
+        var reservations = new List<Reservation>();
+        using var connection = new SqlConnection(_connectionString);
+        var command = new SqlCommand("SELECT * FROM Reservations WHERE UserId = @Id", connection);
+        command.Parameters.AddWithValue("@Id", id);
+        
+        await connection.OpenAsync();
+        using var reader = await command.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            reservations.Add(MapToReservation(reader));
+        }
+
+        return reservations;
+    }
 
     public async Task CreateReservationAsync(Reservation reservation)
     {

@@ -162,3 +162,30 @@
     updateEvent("endDateInput", "endEventTime", "endEventDate");
 
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();         
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'reservation.pdf';
+                link.click();
+                
+                setTimeout(function () {
+                    window.location.href = '@Url.Action("", "Reservation")'; 
+                }, 500); 
+            })
+            .catch(error => {
+                console.error("Error downloading the PDF", error);
+            });
+        });
+    });
+</script>

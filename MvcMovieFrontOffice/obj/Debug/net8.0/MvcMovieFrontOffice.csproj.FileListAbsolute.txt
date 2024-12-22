@@ -307,3 +307,17 @@
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/MigraDoc.DocumentObjectModel.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/MigraDoc.Rendering.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/MigraDoc.RtfRendering.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.Charting.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.Quality.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.Snippets.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.System.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.WPFonts.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/PdfSharp.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/MigraDoc.DocumentObjectModel.resources.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/MigraDoc.Rendering.resources.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/MigraDoc.RtfRendering.resources.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.Charting.resources.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.resources.dll

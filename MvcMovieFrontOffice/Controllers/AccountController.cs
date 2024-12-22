@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MvcMovieFrontOffice.Models;
@@ -148,7 +149,7 @@ public class AccountController(SignInManager<Users> signInManager, UserManager<U
     public async Task<IActionResult> Logout()
     {
         await signInManager.SignOutAsync();
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Index", "Vehicle");
     }
     
     [HttpPost("api/login")]
@@ -167,5 +168,62 @@ public class AccountController(SignInManager<Users> signInManager, UserManager<U
         }
         
         return Ok(new { message = "Login successful" });
+    }
+    
+    public IActionResult UpdateProfile()
+    {
+        var user = userManager.GetUserAsync(User).Result;
+
+        if (user == null)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+        
+        var model = new UpdateProfileViewModel
+        {
+            FullName = user.FullName,
+            Email = user.Email,
+            PhoneNumber = user.PhoneNumber
+        };
+
+        return View(model);
+    }
+    
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> UpdateProfile(UpdateProfileViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(model);
+        }
+        
+        var user = await userManager.GetUserAsync(User);
+
+        if (user == null)
+        {
+            ModelState.AddModelError("", "User not found.");
+            return View(model);
+        }
+        
+        user.FullName = model.FullName;
+        user.Email = model.Email;
+        user.UserName = model.Email;
+        user.PhoneNumber = model.PhoneNumber;
+
+        var result = await userManager.UpdateAsync(user);
+
+        if (result.Succeeded)
+        {
+            //return RedirectToAction("", "Vehicle");
+            return View(new UpdateProfileViewModel { FullName = user.FullName, Email = user.Email });
+        }
+
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError("", error.Description);
+        }
+
+        return View(model);
     }
 }

@@ -9,11 +9,11 @@ using MvcMovieFrontOffice.Services;
 namespace MvcMovieFrontOffice.Controllers;
 
 [Authorize]
-public class ReservationController(ReservationService reservationService, VehicleService vehicleService) : Controller
+public class ReservationController(ReservationService reservationService, VehicleService vehicleService, InvoiceService invoiceService) : Controller
 {
     public async Task<IActionResult> Index()
     {
-        var reservations = await reservationService.GetAllReservationsAsync();
+        var reservations = await reservationService.GetReservationsByIdUserAsync(GetCurrentUserId());
         return View(reservations);
     }
 
@@ -71,6 +71,18 @@ public class ReservationController(ReservationService reservationService, Vehicl
             // return View(reservationViewModel);
         }
         await reservationService.CreateReservationAsync(reservationViewModel.Reservation);
+        var invoiceService = new InvoiceService();
+        var document = invoiceService.GetInvoicePdf(reservationViewModel.Reservation);
+        
+        MemoryStream stream = new MemoryStream();
+        document.Save(stream);
+        
+        Response.ContentType = "application/pdf";
+        Response.Headers["content-lenght"] = stream.Length.ToString();
+        byte[] bytes = stream.ToArray();
+        stream.Close();
+        
+        return File(bytes, "application/pdf", "reservation.pdf");
         return RedirectToAction(nameof(Index));
 
     }
