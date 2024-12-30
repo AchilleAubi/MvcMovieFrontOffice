@@ -63,6 +63,7 @@ public class AccountController(SignInManager<Users> signInManager, UserManager<U
 
         if (result.Succeeded)
         {
+            await userManager.AddToRoleAsync(users, "Client");
             return RedirectToAction("Login", "Account");
         }
         else

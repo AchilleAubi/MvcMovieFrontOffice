@@ -28,7 +28,7 @@
             <a href="/Vehicle/Index" class="btn btn-outline-secondary">Back to List</a>
             @if (Model.Availability)
             {
-                <a href="#" class="btn btn-danger">Book Vehicle</a>
+                <a href="/Reservation/Create/@Model.VehicleId" class="btn btn-danger">Book Vehicle</a>
             }
         </div>
     </div>

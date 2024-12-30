@@ -75,6 +75,14 @@ public class VehicleApiController(VehicleService vehicleService) : Controller
         var vehicles = await _vehicleService.GetVehiclesViewAsync(offset, limit, model, make, vehicleType, availability);
         return Json(vehicles);
     }
+    
+    [HttpGet]
+    [Route("api/vehicles/view/total")]
+    public async Task<IActionResult> GetTotalVehicleViewCountAsync([FromQuery] string? make = null, [FromQuery] string? model = null, [FromQuery] string? vehicleType = null, [FromQuery] bool? availability = null)
+    {
+        int totalVehicleViewCountAsync = await _vehicleService.GetTotalVehicleViewCountAsync(make, model, vehicleType, availability);
+        return Ok(totalVehicleViewCountAsync);
+    }
 
     [HttpGet]
     [Route("api/vehicles/view/{id}")]

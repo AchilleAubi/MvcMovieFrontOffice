@@ -13,8 +13,8 @@ public class VehicleController(VehicleService vehicleService) : Controller
         {
             int offset = (page - 1) * pageSize;
 
-            var vehicles = await _vehicleService.GetVehiclesViewAsync(offset, pageSize, make, model, vehicleType, availability);
-            int totalVehicles = await _vehicleService.GetTotalVehicleViewCountAsync(make, model, vehicleType, availability);
+            var vehicles = await _vehicleService.GetVehiclesViewAsync(offset, pageSize, model, make, vehicleType, availability);
+            int totalVehicles = await _vehicleService.GetTotalVehicleViewCountAsync(model, make, vehicleType, availability);
 
             int totalPages = (int)Math.Ceiling(totalVehicles / (double)pageSize);
 
