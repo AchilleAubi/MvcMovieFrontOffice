@@ -20,7 +20,6 @@
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MvcMovieFrontOffice.props
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MvcMovieFrontOffice.props
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.pack.json
-/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/scopedcss/bundle/MvcMovieFrontOffice.styles.css
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/scopedcss/projectbundle/MvcMovieFrontOffice.bundle.scp.css
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll
@@ -321,3 +320,4 @@
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/MigraDoc.RtfRendering.resources.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.Charting.resources.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.resources.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css

@@ -9,15 +9,17 @@ namespace MvcMovieFrontOffice.Controllers;
 public class AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager)
     : Controller
 {
-    public IActionResult Login(string returnUrl)
+    public IActionResult Login(string? returnUrl = null)
     {
-        ViewData["ReturnUrl"] = returnUrl;
+        ViewData["ReturnUrl"] = returnUrl ?? Url.Content("~/");
         return View();
     }
     
     [HttpPost]
-    public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
+    public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
     {
+        returnUrl ??= Url.Content("~/");
+        
         if (ModelState.IsValid)
         {
             
@@ -37,6 +39,15 @@ public class AccountController(SignInManager<Users> signInManager, UserManager<U
             {
                 ModelState.AddModelError("", "Invalid login attempt.");
                 return View(model);
+            }
+        }
+        else
+        {
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage);
+                }
             }
         }
 

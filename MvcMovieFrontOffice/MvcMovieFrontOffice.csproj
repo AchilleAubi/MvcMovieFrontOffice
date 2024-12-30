@@ -23,7 +23,84 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Pages\" />
       <Folder Include="wwwroot\images\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Account\ChangePassword.cshtml" />
+      <AdditionalFiles Include="Views\Account\Login.cshtml" />
+      <AdditionalFiles Include="Views\Account\Register.cshtml" />
+      <AdditionalFiles Include="Views\Account\UpdateProfile.cshtml" />
+      <AdditionalFiles Include="Views\Account\VerifyEmail.cshtml" />
+      <AdditionalFiles Include="Views\Home\Index.cshtml" />
+      <AdditionalFiles Include="Views\Home\Privacy.cshtml" />
+      <AdditionalFiles Include="Views\Reservation\Create.cshtml" />
+      <AdditionalFiles Include="Views\Reservation\Delete.cshtml" />
+      <AdditionalFiles Include="Views\Reservation\Details.cshtml" />
+      <AdditionalFiles Include="Views\Reservation\Edit.cshtml" />
+      <AdditionalFiles Include="Views\Reservation\Index.cshtml" />
+      <AdditionalFiles Include="Views\Shared\Error.cshtml" />
+      <AdditionalFiles Include="Views\Shared\_AccountLayout.cshtml" />
+      <AdditionalFiles Include="Views\Shared\_Layout.cshtml" />
+      <AdditionalFiles Include="Views\Shared\_LoginPartial.cshtml" />
+      <AdditionalFiles Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <AdditionalFiles Include="Views\Vehicle\Details.cshtml" />
+      <AdditionalFiles Include="Views\Vehicle\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Account\ChangePassword.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\Register.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\UpdateProfile.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\VerifyEmail.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservation\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_AccountLayout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_LoginPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Vehicle\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Vehicle\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Shared\_AccountLayout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Shared\_LoginPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Account\ChangePassword.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Account\Register.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Account\UpdateProfile.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Account\VerifyEmail.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Reservation\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Reservation\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Reservation\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Reservation\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Reservation\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Vehicle\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\FrontOffice\Vehicle\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Account\ChangePassword.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Account\Register.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Account\UpdateProfile.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Account\VerifyEmail.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Reservation\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Reservation\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Reservation\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Reservation\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Reservation\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Vehicle\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Vehicle\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\BackOffice\Reservation\Index.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -4,56 +4,49 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="text-center">Your reservation list</h1>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Vehicle
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.StartDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EndDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TotalPrice)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.VehicleId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalPrice)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                @if (item.Status == "pending")
-                {
-                    <a asp-action="Edit" asp-route-id="@item.Id"> Edit</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id"> Delete</a>
-                }
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Your Reservation List</h1>
+    
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th class="text-center">Vehicle</th>
+                <th class="text-center">@Html.DisplayNameFor(model => model.StartDate)</th>
+                <th class="text-center">@Html.DisplayNameFor(model => model.EndDate)</th>
+                <th class="text-center">@Html.DisplayNameFor(model => model.Status)</th>
+                <th class="text-center">@Html.DisplayNameFor(model => model.TotalPrice)</th>
+                <th class="text-center" style="width: 10px">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.VehicleId)</td>
+                    <td class="text-center">@item.StartDate.ToString("MM/dd/yyyy")</td>
+                    <td class="text-center">@item.EndDate.ToString("MM/dd/yyyy")</td>
+                    <td class="text-center">
+                        <span class="badge 
+                                @(item.Status.ToLower() == "pending" ? "bg-warning" : 
+                                item.Status.ToLower() == "confirmed" ? "bg-primary" :
+                                item.Status.ToLower() == "completed" ? "bg-success" :
+                                item.Status.ToLower() == "canceled" ? "bg-danger" : "bg-secondary")">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </span>
+                    </td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.TotalPrice)</td>
+                    <td class="text-center">
+                        <div class="d-flex justify-content-start">
+                            <a class="btn btn-info btn-sm me-2" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                            @if (item.Status == "pending")
+                            {
+                                <a class="btn btn-warning btn-sm me-2" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
