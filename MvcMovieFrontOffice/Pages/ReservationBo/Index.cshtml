@@ -65,17 +65,27 @@
                     <td>@reservation.Email</td>
                     <td>
                         <div class="table-data-feature">
+                        @*
                             @if (reservation.availability)
                             {
                                 <a class="item" data-toggle="tooltip" data-placement="top" title="Delete"
-                                    href="/ReservationBo/Delete?id=@reservation.ReservationId">
+                                   href="/ReservationBo/Delete?id=@reservation.ReservationId">
                                     <i class="zmdi zmdi-delete"></i>
                                 </a>
                             }
+                            *@
                             <a class="item" data-toggle="tooltip" data-placement="top" title="Edit"
                                href="/ReservationBo/Edit?id=@reservation.ReservationId">
                                 <i class="zmdi zmdi-edit"></i>
                             </a>
+                            <button type="button" class="item send-email-btn"
+                                    data-id="@reservation.ReservationId"
+                                    data-name="@reservation.FullName"
+                                    data-email="@reservation.Email"
+                                    data-message="Reservation ID: @reservation.ReservationId | Start Date: @reservation.StartDate | End Date: @reservation.EndDate | Status: @reservation.Status | Total Price: @reservation.TotalPrice | Model: @reservation.Model | Make: @reservation.make"
+                                    data-toggle="tooltip" data-placement="top" title="Send Email">
+                                <i class="zmdi zmdi-email"></i>
+                            </button>
                         </div>
                     </td>
                 </tr>
@@ -89,3 +99,94 @@
         </tbody>
     </table>
 </div>
+
+<form id="emailForm" style="display: none" class="php-email-form mt-4">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+        </div>
+        <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
+        </div>
+    </div>
+    <div class="form-group mt-3">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
+    </div>
+    <div class="form-group mt-3">
+        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+    </div>
+    <div class="my-3">
+        <div class="loading">Chargement</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Votre message est bien envoyé, merci beaucoup!</div>
+    </div>
+    <div class="text-center"><button type="submit" id="submitButton">Envoyer</button></div>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Gestion du formulaire d'envoi d'e-mail
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            sendEmailFromForm();
+        });
+
+        // Gestion du clic sur le bouton "Send Email"
+        document.querySelectorAll('.send-email-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const reservationId = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                const email = this.getAttribute('data-email');
+                const message = this.getAttribute('data-message');
+
+                const body = {
+                    name: name,
+                    email: email,
+                    subject: `Reservation Details - ID: ${reservationId}`,
+                    message: message
+                };
+
+                // Envoyer l'e-mail via EmailJS
+                emailjs.send("service_h2r6wgd", "template_cr1mnwf", body)
+                    .then(data => {
+                        alert('Email envoyé avec succès !');
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        alert('Erreur lors de l\'envoi du message.');
+                    });
+            });
+        });
+
+        function sendEmailFromForm() {
+            const submitButton = document.getElementById('submitButton');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Chargement';
+            submitButton.classList.add('loading-btn');
+
+            const body = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send("service_h2r6wgd", "template_cr1mnwf", body)
+                .then(data => {
+                    console.log('Email envoyé avec succès !');
+                    document.getElementById('emailForm').reset();
+                    document.querySelector('.sent-message').style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    document.querySelector('.error-message').innerText = 'Erreur lors de l\'envoi du message.';
+                    document.querySelector('.error-message').style.display = 'block';
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Envoyer';
+                    submitButton.classList.remove('loading-btn');
+                });
+        }
+    });
+</script>
