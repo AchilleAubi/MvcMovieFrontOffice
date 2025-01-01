@@ -13,7 +13,6 @@ public class VehicleView(
     DateTime updatedAt,
     int vehicleTypeId,
     string vehicleType,
-    int vehicleImageId,
     string vehicleImage)
 {
     [Key]
@@ -30,7 +29,5 @@ public class VehicleView(
 
     public int VehicleTypeId { get; set; } = vehicleTypeId;
     public string VehicleType { get; set; } = vehicleType;
-
-    public int VehicleImageId { get; set; } = vehicleImageId;
     public string VehicleImage { get; set; } = vehicleImage;
 } 

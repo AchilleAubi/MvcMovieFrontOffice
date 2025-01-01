@@ -1,0 +1,183 @@
+@page
+@model MvcMovieFrontOffice.Pages.VehicleBo.Create
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_AdminLayout";
+}
+
+<div class="card">
+    <div class="card-header">
+        <strong>Add New Vehicle</strong>
+    </div>
+    <div class="card-body card-block">
+        <form id="createVehicleForm" enctype="multipart/form-data" class="form-horizontal">
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="model" class=" form-control-label">Model</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="text" id="model" name="model" placeholder="Model" class="form-control">
+                    <small class="form-text text-muted">Please enter vehicle's model</small>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="make" class=" form-control-label">Make</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="text" id="make" name="make" placeholder="Make" class="form-control">
+                    <small class="form-text text-muted">Please enter vehicle's make</small>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="year" class=" form-control-label">Year</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="number" id="year" name="year" placeholder="Year" class="form-control">
+                    <small class="form-text text-muted">Please enter vehicle's year</small>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="price" class=" form-control-label">Price</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="number" id="price" name="price" placeholder="Price" class="form-control">
+                    <small class="form-text text-muted">Please enter vehicle's price</small>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="disabled-input" class=" form-control-label">Availability</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="checkbox" id="availability" name="availability" checked>
+                    <small class="form-text text-muted">Please check if the vehicle is available</small>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="select" class=" form-control-label">Vehicle's type</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <select id="VehicleType" name="typeId" class="form-control">
+                        @foreach (var type in Model.VehicleTypes!)
+                        {
+                            <option value="@type.Id">
+                                @type.Name
+                            </option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="file-input" class=" form-control-label">Vehicle's image</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input accept="image/png, image/jpeg, image/jpg" type="file" id="file-input" name="file-input" class="form-control-file">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="submit" id="submitButton" class="btn btn-primary btn-sm">
+            <i class="fa fa-dot-circle-o"></i> Submit
+        </button>
+        <button type="reset" class="btn btn-danger btn-sm">
+            <i class="fa fa-ban"></i> Reset
+        </button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("submitButton").addEventListener("click", async function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(document.getElementById("createVehicleForm"));
+
+        const model = formData.get("model");
+        const make = formData.get("make");
+        const year = parseInt(formData.get("year"));
+        const price = parseFloat(formData.get("price"));
+        const availability = formData.get("availability") === "on";
+        const typeId = parseInt(formData.get("typeId"));
+        const imageFile = formData.get("file-input");
+        
+        if (!imageFile) {
+            alert("Please select an image for the vehicle.");
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onloadend = async function() {
+            const imageBase64 = reader.result.split(',')[1];  // Extraire la partie base64
+            
+            // Prépare les données du véhicule
+            const vehicleData = {
+                id: 0,
+                model,
+                make,
+                year,
+                availability,
+                price,
+                typeId,
+                image: imageBase64,  // L'image en base64
+                createdAt: new Date().toISOString(),
+                updatedAt: new Date().toISOString()
+            };
+
+            // Envoi de la requête POST
+            try {
+                console.log(JSON.stringify(vehicleData), 'vehicle data');
+                const response = await fetch("http://localhost:5259/api/vehicles", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(vehicleData)
+                });
+
+                if (response.ok) {
+                    alert("Vehicle created successfully!");
+                    window.location.href = "/VehicleBo";  // Redirige vers la liste des véhicules
+                } else {
+                    const errorMessage = await response.text();
+                    alert("Error: " + errorMessage);
+                }
+            } catch (error) {
+                console.error("Network error:", error);
+                alert("Error while creating vehicle.");
+            }
+        };
+
+        // Lire le fichier image en base64
+        reader.readAsDataURL(imageFile);
+    });
+</script>
+
+<div class="card">
+    <div class="card-header">
+        <strong>Add New Vehicle's type</strong>
+    </div>
+    <div class="card-body card-block">
+        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label for="model" class=" form-control-label">Type</label>
+                </div>
+                <div class="col-12 col-md-9">
+                    <input type="text" id="type" name="year" placeholder="Type" class="form-control">
+                    <small class="form-text text-muted">Please enter the new type</small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary btn-sm">
+            <i class="fa fa-dot-circle-o"></i> Submit
+        </button>
+    </div>
+</div>

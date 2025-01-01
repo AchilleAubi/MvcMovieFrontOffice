@@ -30,6 +30,7 @@ public class VehicleService(string? connectionString)
                         availability: reader.IsDBNull("Availability") ? (bool?)null : reader.GetBoolean("Availability"),
                         typeId: reader.GetInt32("TypeId"),
                         price: reader.GetInt32("Price"),
+                        image: reader.GetString("Image"),
                         createdAt: reader.IsDBNull("CreatedAt") ? (DateTime?)null : reader.GetDateTime("CreatedAt"),
                         updatedAt: reader.IsDBNull("UpdatedAt") ? (DateTime?)null : reader.GetDateTime("UpdatedAt")
                     ));
@@ -77,7 +78,6 @@ public class VehicleService(string? connectionString)
                         updatedAt: reader.GetDateTime("UpdatedAt"),
                         vehicleTypeId: reader.GetInt32("VehicleTypeId"),
                         vehicleType: reader.GetString("VehicleType"),
-                        vehicleImageId: reader.GetInt32("VehicleImageId"),
                         vehicleImage: reader.GetString("VehicleImage")
                     ));
                 }
@@ -135,7 +135,6 @@ public class VehicleService(string? connectionString)
                         updatedAt: reader.GetDateTime("UpdatedAt"),
                         vehicleTypeId: reader.GetInt32("VehicleTypeId"),
                         vehicleType: reader.GetString("VehicleType"),
-                        vehicleImageId: reader.GetInt32("VehicleImageId"),
                         vehicleImage: reader.GetString("VehicleImage")
                     );
                 }
@@ -167,6 +166,7 @@ public class VehicleService(string? connectionString)
                         availability: reader.IsDBNull("Availability") ? (bool?)null : reader.GetBoolean("Availability"),
                         typeId: reader.GetInt32("TypeId"),
                         price: reader.GetInt32("Price"),
+                        image: reader.GetString("Image"),
                         createdAt: reader.IsDBNull("CreatedAt") ? (DateTime?)null : reader.GetDateTime("CreatedAt"),
                         updatedAt: reader.IsDBNull("UpdatedAt") ? (DateTime?)null : reader.GetDateTime("UpdatedAt")
                     );
@@ -221,8 +221,8 @@ public class VehicleService(string? connectionString)
 
     public async Task CreateVehicleAsync(Vehicle vehicle)
     {
-        var query = @"INSERT INTO Vehicles (Model, Make, Year, Availability, TypeId, Price, CreatedAt, UpdatedAt) 
-                      VALUES (@Model, @Make, @Year, @Availability, @TypeId, @Price, @CreatedAt, @UpdatedAt)";
+        var query = @"INSERT INTO Vehicles (Model, Make, Year, Availability, TypeId, Price, Image, CreatedAt, UpdatedAt) 
+                      VALUES (@Model, @Make, @Year, @Availability, @TypeId, @Price, @Image, @CreatedAt, @UpdatedAt)";
 
         using (var connection = new SqlConnection(_connectionString))
         using (var command = new SqlCommand(query, connection))
@@ -233,6 +233,7 @@ public class VehicleService(string? connectionString)
             command.Parameters.AddWithValue("@Availability", (object?)vehicle.Availability ?? DBNull.Value);
             command.Parameters.AddWithValue("@TypeId", vehicle.TypeId);
             command.Parameters.AddWithValue("@Price", vehicle.Price);
+            command.Parameters.AddWithValue("@Image", vehicle.Image);
             command.Parameters.AddWithValue("@CreatedAt", (object?)vehicle.CreatedAt ?? DBNull.Value);
             command.Parameters.AddWithValue("@UpdatedAt", (object?)vehicle.UpdatedAt ?? DBNull.Value);
 
@@ -245,7 +246,7 @@ public class VehicleService(string? connectionString)
     {
         var query = @"UPDATE Vehicles 
                       SET Model = @Model, Make = @Make, Year = @Year, Availability = @Availability, 
-                          TypeId = @TypeId, Price = @Price, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt 
+                          TypeId = @TypeId, Price = @Price, Image = @Image, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt 
                       WHERE Id = @Id";
 
         using (var connection = new SqlConnection(_connectionString))
@@ -258,6 +259,7 @@ public class VehicleService(string? connectionString)
             command.Parameters.AddWithValue("@Availability", (object?)vehicle.Availability ?? DBNull.Value);
             command.Parameters.AddWithValue("@TypeId", vehicle.TypeId);
             command.Parameters.AddWithValue("@Price", vehicle.Price);
+            command.Parameters.AddWithValue("@Image", vehicle.Image);
             command.Parameters.AddWithValue("@CreatedAt", (object?)vehicle.CreatedAt ?? DBNull.Value);
             command.Parameters.AddWithValue("@UpdatedAt", (object?)vehicle.UpdatedAt ?? DBNull.Value);
 
@@ -278,5 +280,15 @@ public class VehicleService(string? connectionString)
             connection.Open();
             return (int)command.ExecuteScalar() > 0;
         }
+    }
+    
+    public async Task DeleteVehicleAsync(int id)
+    {
+        using var connection = new SqlConnection(_connectionString);
+        var command = new SqlCommand("DELETE FROM Vehicles WHERE Id = @Id", connection);
+        command.Parameters.AddWithValue("@Id", id);
+
+        await connection.OpenAsync();
+        await command.ExecuteNonQueryAsync();
     }
 }

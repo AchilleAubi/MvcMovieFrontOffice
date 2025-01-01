@@ -1,0 +1,160 @@
+@page
+@model MvcMovieFrontOffice.Pages.VehicleBo.Index
+
+@{
+    ViewData["Title"] = "Vehicle";
+    Layout = "_AdminLayout";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- DATA TABLE -->
+        <h3 class="title-5 m-b-35">Vehicle List</h3>
+        <div class="table-data__tool">
+            <div class="table-data__tool-left">
+                <form method="get" class="table-data__tool-left">
+                <div class="rs-select2--light rs-select2--md">
+                    <input type="text" name="model" class="form-control" placeholder="Model" value="@Request.Query["model"]"/>
+                </div>
+                <div class="rs-select2--light rs-select2--md">
+                    <input type="text" name="make" class="form-control" placeholder="Make" value="@Request.Query["make"]"/>
+                </div>
+                <div class="rs-select2--light rs-select2--md">
+                    <select class="js-select2" name="VehicleType">
+                        <option value="">All Types</option>
+                        @foreach (var type in Model.VehicleTypes!)
+                        {
+                            <option value="@type.Name" selected="@(Request.Query["vehicleType"] == type.Name ? "selected" : null)">
+                                @type.Name
+                            </option>
+                        }
+                    </select>
+                    <div class="dropDownSelect2"></div>
+                </div>
+                <div class="rs-select2--light rs-select2--md">
+                    <select class="js-select2" name="availability">
+                        <option value="">All</option>
+                        <option value="true" selected="@(Request.Query["availability"] == "true" ? "selected" : null)">Available</option>
+                        <option value="false" selected="@(Request.Query["availability"] == "false" ? "selected" : null)">Unavailable</option>
+                    </select>
+                    <div class="dropDownSelect2"></div>
+                </div>
+                <button class="au-btn-filter">
+                    <i class="zmdi zmdi-filter-list"></i>filters</button>
+                <button class="au-btn-filter">
+                    <a href="?">Reset</a></button>
+                </form>
+            </div>
+            <div class="table-data__tool-right">
+                <a href="/VehicleBo/Create" asp-area="" class="au-btn au-btn-icon au-btn--green au-btn--small">
+                        <i class="zmdi zmdi-plus"></i>add vehicle
+                </a>
+                <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
+                    <select class="js-select2" name="type">
+                        <option selected="selected">Export</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                    </select>
+                    <div class="dropDownSelect2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive table-responsive-data2">
+            <table class="table table-data2">
+                <thead>
+                <tr>
+                    <th>vehicle</th>
+                    <th>model</th>
+                    <th>make</th>
+                    <th>availability</th>
+                    <th>type</th>
+                    <th>price</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                @if (Model.VehicleViews!.Count > 0)
+                {
+                    @foreach (var vehicle in Model.VehicleViews)
+                    {
+                        <tr class="tr-shadow">
+                            <td>
+                                @vehicle.VehicleId
+                            </td>
+                            <td class="desc">@vehicle.Model</td>
+                            <td>@vehicle.Make</td>
+                            <td>
+                                <span class="@(@vehicle.Availability ? "status--process" : "status--denied")">
+                                    @vehicle.Availability
+                                </span>
+                            </td>
+                            <td>@vehicle.VehicleType</td>
+                            <td>@vehicle.Price</td>
+                            <td>
+                                <div class="table-data-feature">
+                                    @if (vehicle.Availability)
+                                    {
+                                        <a class="item" data-toggle="tooltip" data-placement="top" title="Delete"
+                                            href="/VehicleBo/Delete?id=@vehicle.VehicleId">
+                                            <i class="zmdi zmdi-delete"></i>
+                                        </a>
+                                    }
+                                    <a class="item" data-toggle="tooltip" data-placement="top" title="View"
+                                       href="/VehicleBo/Details?id=@vehicle.VehicleId">
+                                        <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                    <a class="item" data-toggle="tooltip" data-placement="top" title="Edit"
+                                       href="/VehicleBo/Edit?id=@vehicle.VehicleId">
+                                        <i class="zmdi zmdi-edit"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                    }
+                }
+                else
+                {
+                    <p>No data vehicle</p>
+                }
+                </tbody>
+            </table>
+        </div>
+        <!-- END DATA TABLE -->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 d-flex justify-content-center mt-4">
+        <nav>
+            <ul class="pagination">
+                @if (Model.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="?page=@(Model.CurrentPage - 1)&model=@Request.Query["model"]&make=@Request.Query["make"]&vehicleType=@Request.Query["vehicleType"]&availability=@Request.Query["availability"]">
+                            Previous
+                        </a>
+                    </li>
+                }
+
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="?page=@i&model=@Request.Query["model"]&make=@Request.Query["make"]&vehicleType=@Request.Query["vehicleType"]&availability=@Request.Query["availability"]">
+                            @i
+                        </a>
+                    </li>
+                }
+
+                @if (Model.CurrentPage < Model.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="?page=@(Model.CurrentPage + 1)&model=@Request.Query["model"]&make=@Request.Query["make"]&vehicleType=@Request.Query["vehicleType"]&availability=@Request.Query["availability"]">
+                            Next
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>

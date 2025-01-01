@@ -38,7 +38,7 @@ public class VehicleApiController(VehicleService vehicleService) : Controller
         return CreatedAtAction(nameof(GetVehicles), new { id = vehicle.Id }, vehicle);
     }
     
-    [HttpPut("{id}")]
+    [HttpPut("api/vehicles/{id}")]
     public async Task<IActionResult> UpdateVehicle(int id, [FromBody] Vehicle vehicle)
     {
         if (id != vehicle.Id)
@@ -65,6 +65,13 @@ public class VehicleApiController(VehicleService vehicleService) : Controller
             throw;
         }
 
+        return NoContent();
+    }
+    
+    [HttpDelete("api/vehicles/{id}")]
+    public async Task<IActionResult> DeleteVehicle(int id)
+    {
+        await vehicleService.DeleteVehicleAsync(id);
         return NoContent();
     }
     

@@ -14,5 +14,7 @@ public class ApplicationDbContext: IdentityDbContext<Users>
     public DbSet<VehicleView> VehicleView { get; set; }
     public DbSet<VehicleType> VehicleTypes { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<VehicleImage> VehicleImages { get; set; }
+    public DbSet<ReservationView> ReservationView { get; set; }
 
 }

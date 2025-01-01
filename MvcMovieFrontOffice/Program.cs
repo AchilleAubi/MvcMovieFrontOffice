@@ -16,9 +16,14 @@ builder.Services.AddSingleton(new DatabaseHelper(builder.Configuration.GetConnec
 builder.Services.AddScoped<VehicleService>(_ => new VehicleService(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ReservationService>(_ => new ReservationService(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<InvoiceService>();
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<ApiService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddRazorPages();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
@@ -50,9 +55,6 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
-// builder.Services.AddScoped<VehicleService>();
-//builder.Services.AddScoped<ReservationService>();
 
 builder.Services.AddIdentity<Users, IdentityRole>(options =>
 {
@@ -108,5 +110,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Vehicle}/{action=Index}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();

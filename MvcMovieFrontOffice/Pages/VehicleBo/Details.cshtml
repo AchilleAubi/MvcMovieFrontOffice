@@ -1,0 +1,97 @@
+@page
+@model MvcMovieFrontOffice.Pages.VehicleBo.Details
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_AdminLayout";
+}
+
+<div class="card">
+    <div class="card-header">
+        <strong>Details for vehicle : @Model.VehicleView?.VehicleId</strong>
+    </div>
+    <div class="card-body card-block">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Model -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="model" class="form-control-label">Model</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="model" name="model" value="@Model.VehicleView?.Model" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Make -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="make" class="form-control-label">Make</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="make" name="make" value="@Model.VehicleView?.Make" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Year -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="year" class="form-control-label">Year</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="number" id="year" name="year" value="@Model.VehicleView?.Year" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Price -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="price" class="form-control-label">Price</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="number" id="price" name="price" value="@Model.VehicleView?.Price" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Availability -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="availability" class="form-control-label">Availability</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="availability" name="availability" value="@(Model.VehicleView?.Availability == true ? "True" : "False")" class="form-control" readonly>
+                    </div>
+                </div>
+                <!-- Vehicle Type -->
+                <div class="row form-group">
+                    <div class="col col-md-3">
+                        <label for="select" class="form-control-label">Vehicle's type</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="select" name="select" value="@Model.VehicleView?.VehicleType" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    @if (!string.IsNullOrEmpty(Model.VehicleView?.VehicleImage))
+                    {
+                        <img width="500" src="data:image/png;base64,@Model.VehicleView.VehicleImage" alt="Vehicle Image" class="img-fluid">
+                    }
+                    else
+                    {
+                        <p>No image available</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <a href="/VehicleBo/Edit?id=@Model.VehicleView?.VehicleId" class="btn btn-primary btn-sm">
+            <i class="zmdi zmdi-edit"></i> Edit
+        </a>
+        <a href="/VehicleBo/Delete?id=@Model.VehicleView?.VehicleId" class="btn btn-danger btn-sm">
+            <i class="zmdi zmdi-delete"></i> Delete
+        </a>
+        <a href="/VehicleBo" class="btn btn-default btn-sm">
+            <i class="fa fa-arrow-left"></i> Back
+        </a>
+    </div>
+</div>

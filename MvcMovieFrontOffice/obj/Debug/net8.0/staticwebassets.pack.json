@@ -9,12 +9,20 @@
       "PackagePath": "staticwebassets/css/account.css"
     },
     {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/admin.css",
+      "PackagePath": "staticwebassets/css/admin.css"
+    },
+    {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/calendar.css",
       "PackagePath": "staticwebassets/css/calendar.css"
     },
     {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/css/theme.css",
+      "PackagePath": "staticwebassets/css/theme.css"
     },
     {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/favicon.ico",
@@ -25,8 +33,60 @@
       "PackagePath": "staticwebassets/images/account-bg.jpg"
     },
     {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/Untitled-1.jpg",
+      "PackagePath": "staticwebassets/images/icon/Untitled-1.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-01.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-01.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-02.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-02.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-03.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-03.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-04.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-04.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-05.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-05.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-06.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-06.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-big-01.jpg",
+      "PackagePath": "staticwebassets/images/icon/avatar-big-01.jpg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/logo-blue.png",
+      "PackagePath": "staticwebassets/images/icon/logo-blue.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/logo-mini.png",
+      "PackagePath": "staticwebassets/images/icon/logo-mini.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/logo-white.png",
+      "PackagePath": "staticwebassets/images/icon/logo-white.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/logo.png",
+      "PackagePath": "staticwebassets/images/icon/logo.png"
+    },
+    {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/logo.png",
       "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
     },
     {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/js/site.js",
@@ -259,6 +319,790 @@
     {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/animsition/animsition.min.css",
+      "PackagePath": "staticwebassets/vendor/animsition/animsition.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/animsition/animsition.min.js",
+      "PackagePath": "staticwebassets/vendor/animsition/animsition.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/bootstrap-4.1/bootstrap.min.css",
+      "PackagePath": "staticwebassets/vendor/bootstrap-4.1/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/bootstrap-4.1/bootstrap.min.js",
+      "PackagePath": "staticwebassets/vendor/bootstrap-4.1/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/bootstrap-4.1/popper.min.js",
+      "PackagePath": "staticwebassets/vendor/bootstrap-4.1/popper.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css",
+      "PackagePath": "staticwebassets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js",
+      "PackagePath": "staticwebassets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/chartjs/Chart.bundle.min.js",
+      "PackagePath": "staticwebassets/vendor/chartjs/Chart.bundle.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/circle-progress/circle-progress.js",
+      "PackagePath": "staticwebassets/vendor/circle-progress/circle-progress.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/circle-progress/circle-progress.min.js",
+      "PackagePath": "staticwebassets/vendor/circle-progress/circle-progress.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/countdown/countdowntime.js",
+      "PackagePath": "staticwebassets/vendor/countdown/countdowntime.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/countdown/jquery.countdown.min.js",
+      "PackagePath": "staticwebassets/vendor/countdown/jquery.countdown.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/countdown/moment-timezone-with-data.min.js",
+      "PackagePath": "staticwebassets/vendor/countdown/moment-timezone-with-data.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/countdown/moment-timezone.min.js",
+      "PackagePath": "staticwebassets/vendor/countdown/moment-timezone.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/countdown/moment.min.js",
+      "PackagePath": "staticwebassets/vendor/countdown/moment.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/counter-up/jquery.counterup.min.js",
+      "PackagePath": "staticwebassets/vendor/counter-up/jquery.counterup.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/counter-up/jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets/vendor/counter-up/jquery.waypoints.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/counter-up/waypoints.min.js",
+      "PackagePath": "staticwebassets/vendor/counter-up/waypoints.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/css-hamburgers/hamburgers.css",
+      "PackagePath": "staticwebassets/vendor/css-hamburgers/hamburgers.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/css-hamburgers/hamburgers.min.css",
+      "PackagePath": "staticwebassets/vendor/css-hamburgers/hamburgers.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/HELP-US-OUT.txt"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/css/font-awesome.css",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/css/font-awesome.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/css/fontawesome-all.min.css",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/css/fontawesome-all.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-brands-400.eot",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-brands-400.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-brands-400.svg",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-brands-400.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-brands-400.ttf",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-brands-400.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-brands-400.woff",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-brands-400.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-brands-400.woff2",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-brands-400.woff2"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-regular-400.eot",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-regular-400.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-regular-400.svg",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-regular-400.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-regular-400.ttf",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-regular-400.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-regular-400.woff",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-regular-400.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-regular-400.woff2",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-regular-400.woff2"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-solid-900.eot",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-solid-900.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-solid-900.svg",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-solid-900.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-solid-900.ttf",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-solid-900.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-solid-900.woff",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-solid-900.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/font-awesome-5/webfonts/fa-solid-900.woff2",
+      "PackagePath": "staticwebassets/vendor/font-awesome-5/webfonts/fa-solid-900.woff2"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/CHANGELOG.txt",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/CHANGELOG.txt"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/CONTRIBUTING.txt",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/CONTRIBUTING.txt"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/LICENSE.txt",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/LICENSE.txt"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/README.txt",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/README.txt"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.css",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.min.css",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.min.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.print.css",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.print.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/fullcalendar.print.min.css",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/fullcalendar.print.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/gcal.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/gcal.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/gcal.min.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/gcal.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/lib/moment.min.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/lib/moment.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale-all.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale-all.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/af.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/af.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-dz.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-dz.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-kw.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-kw.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-ly.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-ly.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-ma.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-ma.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-sa.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-sa.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar-tn.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar-tn.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ar.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ar.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/be.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/be.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/bg.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/bg.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/bs.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/bs.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ca.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ca.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/cs.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/cs.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/da.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/da.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/de-at.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/de-at.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/de-ch.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/de-ch.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/de.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/de.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/el.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/el.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/en-au.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/en-au.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/en-ca.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/en-ca.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/en-gb.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/en-gb.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/en-ie.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/en-ie.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/en-nz.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/en-nz.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/es-do.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/es-do.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/es-us.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/es-us.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/es.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/es.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/et.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/et.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/eu.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/eu.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/fa.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/fa.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/fi.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/fi.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/fr-ca.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/fr-ca.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/fr-ch.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/fr-ch.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/fr.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/fr.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/gl.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/gl.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/he.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/he.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/hi.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/hi.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/hr.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/hr.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/hu.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/hu.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/id.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/id.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/is.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/is.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/it.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/it.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ja.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ja.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ka.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ka.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/kk.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/kk.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ko.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ko.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/lb.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/lb.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/lt.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/lt.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/lv.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/lv.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/mk.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/mk.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ms-my.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ms-my.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ms.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ms.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/nb.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/nb.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/nl-be.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/nl-be.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/nl.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/nl.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/nn.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/nn.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/pl.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/pl.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/pt-br.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/pt-br.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/pt.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/pt.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ro.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ro.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/ru.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/ru.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sk.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sk.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sl.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sl.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sq.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sq.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sr-cyrl.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sr-cyrl.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sr.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sr.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/sv.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/sv.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/th.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/th.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/tr.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/tr.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/uk.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/uk.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/vi.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/vi.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/zh-cn.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/zh-cn.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/zh-hk.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/zh-hk.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/fullcalendar-3.10.0/locale/zh-tw.js",
+      "PackagePath": "staticwebassets/vendor/fullcalendar-3.10.0/locale/zh-tw.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets/vendor/jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/jquery-ui.min.js",
+      "PackagePath": "staticwebassets/vendor/jquery-ui.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/css/lightbox.css",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/css/lightbox.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/images/close.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/images/close.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/images/loading.gif",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/images/loading.gif"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/images/next.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/images/next.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/images/prev.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/images/prev.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox-plus-jquery.js",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox-plus-jquery.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.map",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox-plus-jquery.min.map"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox.js",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox.min.js",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/dist/js/lightbox.min.map",
+      "PackagePath": "staticwebassets/vendor/lightbox2/dist/js/lightbox.min.map"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/css/lightbox.css",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/css/lightbox.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/images/close.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/images/close.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/images/loading.gif",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/images/loading.gif"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/images/next.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/images/next.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/images/prev.png",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/images/prev.png"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/lightbox2/src/js/lightbox.js",
+      "PackagePath": "staticwebassets/vendor/lightbox2/src/js/lightbox.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/css/material-design-iconic-font.css",
+      "PackagePath": "staticwebassets/vendor/mdi-font/css/material-design-iconic-font.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/css/material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets/vendor/mdi-font/css/material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/perfect-scrollbar/perfect-scrollbar.css",
+      "PackagePath": "staticwebassets/vendor/perfect-scrollbar/perfect-scrollbar.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/perfect-scrollbar/perfect-scrollbar.js",
+      "PackagePath": "staticwebassets/vendor/perfect-scrollbar/perfect-scrollbar.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/perfect-scrollbar/perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/progressbar/progressbar.js",
+      "PackagePath": "staticwebassets/vendor/progressbar/progressbar.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/progressbar/progressbar.min.js",
+      "PackagePath": "staticwebassets/vendor/progressbar/progressbar.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/select2/select2.min.css",
+      "PackagePath": "staticwebassets/vendor/select2/select2.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/select2/select2.min.js",
+      "PackagePath": "staticwebassets/vendor/select2/select2.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/ajax-loader.gif",
+      "PackagePath": "staticwebassets/vendor/slick/ajax-loader.gif"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/config.rb",
+      "PackagePath": "staticwebassets/vendor/slick/config.rb"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/fonts/slick.eot",
+      "PackagePath": "staticwebassets/vendor/slick/fonts/slick.eot"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/fonts/slick.svg",
+      "PackagePath": "staticwebassets/vendor/slick/fonts/slick.svg"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/fonts/slick.ttf",
+      "PackagePath": "staticwebassets/vendor/slick/fonts/slick.ttf"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/fonts/slick.woff",
+      "PackagePath": "staticwebassets/vendor/slick/fonts/slick.woff"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick-theme.css",
+      "PackagePath": "staticwebassets/vendor/slick/slick-theme.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick-theme.less",
+      "PackagePath": "staticwebassets/vendor/slick/slick-theme.less"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick-theme.scss",
+      "PackagePath": "staticwebassets/vendor/slick/slick-theme.scss"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick.css",
+      "PackagePath": "staticwebassets/vendor/slick/slick.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick.js",
+      "PackagePath": "staticwebassets/vendor/slick/slick.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick.less",
+      "PackagePath": "staticwebassets/vendor/slick/slick.less"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick.min.js",
+      "PackagePath": "staticwebassets/vendor/slick/slick.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/slick/slick.scss",
+      "PackagePath": "staticwebassets/vendor/slick/slick.scss"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/smk-accordion/accordion.css",
+      "PackagePath": "staticwebassets/vendor/smk-accordion/accordion.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/smk-accordion/accordion.js",
+      "PackagePath": "staticwebassets/vendor/smk-accordion/accordion.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/smk-accordion/accordion.min.js",
+      "PackagePath": "staticwebassets/vendor/smk-accordion/accordion.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/sweetalert/sweetalert.min.js",
+      "PackagePath": "staticwebassets/vendor/sweetalert/sweetalert.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.brazil.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.brazil.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.europe.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.europe.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.france.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.france.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.germany.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.germany.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.min.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.min.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.russia.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.russia.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.sampledata.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.sampledata.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.usa.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jquery.vmap.world.js",
+      "PackagePath": "staticwebassets/vendor/vector-map/jquery.vmap.world.js"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/vector-map/jqvmap.min.css",
+      "PackagePath": "staticwebassets/vendor/vector-map/jqvmap.min.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/wow/animate.css",
+      "PackagePath": "staticwebassets/vendor/wow/animate.css"
+    },
+    {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/vendor/wow/wow.min.js",
+      "PackagePath": "staticwebassets/vendor/wow/wow.min.js"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MvcMovieFrontOffice.Microsoft.AspNetCore.StaticWebAssets.props",

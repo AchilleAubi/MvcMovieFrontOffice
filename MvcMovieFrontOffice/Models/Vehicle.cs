@@ -5,7 +5,7 @@ namespace MvcMovieFrontOffice.Models;
 
 public class Vehicle
 {
-    public Vehicle(int id, string model, string make, int year, bool? availability, int typeId, int price, DateTime? createdAt, DateTime? updatedAt)
+    public Vehicle(int id, string model, string make, int year, bool? availability, int typeId, int price, string image, DateTime? createdAt, DateTime? updatedAt)
     {
         Id = id;
         Model = model;
@@ -14,6 +14,7 @@ public class Vehicle
         Availability = availability;
         TypeId = typeId;
         Price = price;
+        Image = image;
         CreatedAt = createdAt;
         UpdatedAt = updatedAt;
     }
@@ -37,6 +38,9 @@ public class Vehicle
 
     [Required]
     public int TypeId { get; set; }
+    
+    [Required]
+    public string Image { get; set; }
     
     public DateTime? CreatedAt { get; set; }
     
