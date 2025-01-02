@@ -41,7 +41,7 @@
                             @if (item.Status == "pending")
                             {
                                 <a class="btn btn-warning btn-sm me-2" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                @*<a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
                             }
                         </div>
                     </td>
