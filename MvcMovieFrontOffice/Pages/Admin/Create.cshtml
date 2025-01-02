@@ -1,0 +1,87 @@
+@page
+@model MvcMovieFrontOffice.Pages.Admin.Create
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-4">
+    <h2>Create User</h2>
+    <form id="createUserForm">
+        <div class="form-group mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" id="Email" name="Email" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="FullName" class="form-label">Full Name</label>
+            <input type="text" id="FullName" name="FullName" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" id="Password" name="Password" class="form-control" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Role" class="form-label">Role</label>
+            <select id="Role" name="Role" class="form-control" required>
+                <option value="Admin">Admin</option>
+                <option value="Client">Client</option>
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="button" id="createButton" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create User
+            </button>
+            <a href="/Admin" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Lors du clic sur le bouton Create
+            $('#createButton').click(async function () {
+                const email = $('#Email').val();
+                const fullName = $('#FullName').val();
+                const password = $('#Password').val();
+                const role = $('#Role').val();
+
+                if (!email || !fullName || !password || !role) {
+                    alert("Please fill all fields.");
+                    return;
+                }
+
+                const data = {
+                    Email: email,
+                    FullName: fullName,
+                    Password: password,
+                    Role: role
+                };
+
+                const response = await fetch("http://localhost:5259/api/user/create", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert("User created successfully!");
+                    window.location.href = "/Admin";  // Redirige vers la liste des véhicules
+                } else {
+                    const errorMessage = await response.text();
+                    alert("Error: " + errorMessage);
+                }
+            });
+        });
+    </script>
+}
