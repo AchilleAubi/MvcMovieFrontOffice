@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MvcMovieFrontOffice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7600382f709b70e996c567a7cf42f0aaad58ae2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93d250122cb5cb3c66375ec205713e7d91c665df")]
 [assembly: System.Reflection.AssemblyProductAttribute("MvcMovieFrontOffice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MvcMovieFrontOffice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -142,18 +142,17 @@
                 const body = {
                     name: name,
                     email: email,
-                    subject: `Reservation Details - ID: ${reservationId}`,
+                    subject: `Details of your reservation - ID: ${reservationId}`,
                     message: message
                 };
-
-                // Envoyer l'e-mail via EmailJS
-                emailjs.send("service_h2r6wgd", "template_cr1mnwf", body)
+                
+                emailjs.send("service_h2r6wgd", "template_7oz876o", body)
                     .then(data => {
-                        alert('Email envoyé avec succès !');
+                        alert('Email sent successfully !');
                     })
                     .catch(error => {
-                        console.error('Erreur:', error);
-                        alert('Erreur lors de l\'envoi du message.');
+                        console.error('Error:', error);
+                        alert('Error sending message.');
                     });
             });
         });
@@ -171,7 +170,7 @@
                 message: document.getElementById('message').value
             };
 
-            emailjs.send("service_h2r6wgd", "template_cr1mnwf", body)
+            emailjs.send("service_h2r6wgd", "template_7oz876o", body)
                 .then(data => {
                     console.log('Email envoyé avec succès !');
                     document.getElementById('emailForm').reset();
