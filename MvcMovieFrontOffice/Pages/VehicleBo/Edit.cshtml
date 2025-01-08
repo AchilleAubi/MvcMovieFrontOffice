@@ -112,7 +112,25 @@
 <script>
     document.getElementById("saveButton").addEventListener("click", async function () {
 
-        const vehicleImage = @Html.Raw(Json.Serialize(Model.VehicleView?.VehicleImage));
+        const vehicleImageInput = document.getElementById("new-img");
+        let existingVehicleImage;
+        
+        existingVehicleImage =@Html.Raw(Json.Serialize(Model.VehicleView?.VehicleImage));
+
+        let vehicleImage = existingVehicleImage;
+        
+        if (vehicleImageInput.files && vehicleImageInput.files[0]) {
+            const file = vehicleImageInput.files[0];
+            const reader = new FileReader();
+            
+            vehicleImage = await new Promise((resolve, reject) => {
+                reader.onload = function (e) {
+                    resolve(e.target.result.split(",")[1]);
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
 
         const data = {
             id: @Model.VehicleView?.VehicleId,

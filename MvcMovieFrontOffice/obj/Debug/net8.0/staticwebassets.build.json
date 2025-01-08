@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RYEWX7LH2f8UB3UYriCGLINDWdXBq4isInofDM9+f1U=",
+  "Hash": "xs4H5JIMMPEmTOdiKFICZf94kdNNTo5B7mpaxbFzj5Y=",
   "Source": "MvcMovieFrontOffice",
   "BasePath": "_content/MvcMovieFrontOffice",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/account-bg.jpg"
+    },
+    {
+      "Identity": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/head-bg.jpg",
+      "SourceId": "MvcMovieFrontOffice",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/",
+      "BasePath": "_content/MvcMovieFrontOffice",
+      "RelativePath": "images/head-bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/head-bg.jpg"
     },
     {
       "Identity": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/avatar-01.jpg",

@@ -10,19 +10,44 @@
   <component name="ChangeListManager">
     <list default="true" id="abe2d39d-e915-415e-b128-bd198e9ad728" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_AdminLayout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_AdminLayout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Account/UpdateProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Account/UpdateProfile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.MvcMovieFrontOffice.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.MvcMovieFrontOffice.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/images/logo.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +61,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -76,6 +102,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;.NET Launch Settings Profile.MvcMovieFrontOffice: http.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -172,6 +199,12 @@
       <workItem from="1736008660964" duration="1317000" />
       <workItem from="1736070377187" duration="1438000" />
       <workItem from="1736093844373" duration="601000" />
+      <workItem from="1736145165672" duration="950000" />
+      <workItem from="1736164110351" duration="2256000" />
+      <workItem from="1736185409099" duration="5340000" />
+      <workItem from="1736242331338" duration="848000" />
+      <workItem from="1736281448759" duration="2480000" />
+      <workItem from="1736352803868" duration="2549000" />
     </task>
     <servers />
   </component>

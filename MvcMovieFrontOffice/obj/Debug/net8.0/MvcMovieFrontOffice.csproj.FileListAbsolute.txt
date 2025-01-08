@@ -321,3 +321,11 @@
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.Charting.resources.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/de/PdfSharp.resources.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Connections.Common.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Client.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Common.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.Extensions.Features.dll

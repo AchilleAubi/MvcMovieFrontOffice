@@ -21,7 +21,7 @@
                         <label for="startDate" class="form-control-label">Start Date</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="date" id="startDate" name="startDate" value="@Model.ReservationView?.StartDate.ToString("yyyy-MM-dd")" class="form-control">
+                        <input type="date" id="startDate" name="startDate" value="@Model.ReservationView?.StartDate.ToString("yyyy-MM-dd")" class="form-control" readonly>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -29,7 +29,7 @@
                         <label for="endDate" class="form-control-label">End Date</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="date" id="endDate" name="endDate" value="@Model.ReservationView?.EndDate.ToString("yyyy-MM-dd")" class="form-control">
+                        <input type="date" id="endDate" name="endDate" value="@Model.ReservationView?.EndDate.ToString("yyyy-MM-dd")" class="form-control" readonly>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -51,7 +51,7 @@
                         <label for="totalPrice" class="form-control-label">Total Price</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="number" id="totalPrice" name="totalPrice" value="@Model.ReservationView?.TotalPrice" class="form-control">
+                        <input type="number" id="totalPrice" name="totalPrice" value="@Model.ReservationView?.TotalPrice" class="form-control" readonly>
                     </div>
                 </div>
                 <!-- Year -->
@@ -60,7 +60,7 @@
                         <label for="model" class="form-control-label">Model</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="model" name="model" value="@Model.ReservationView?.Model" class="form-control">
+                        <input type="text" id="model" name="model" value="@Model.ReservationView?.Model" class="form-control" readonly>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -68,7 +68,7 @@
                         <label for="make" class="form-control-label">Make</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="make" name="make" value="@Model.ReservationView?.make" class="form-control">
+                        <input type="text" id="make" name="make" value="@Model.ReservationView?.make" class="form-control" readonly>
                     </div>
                 </div>
                 <!-- Price -->
@@ -88,7 +88,7 @@
                         <label for="fullname" class="form-control-label">FullName</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="fullname" name="fullname" value="@Model.ReservationView?.FullName" class="form-control">
+                        <input type="text" id="fullname" name="fullname" value="@Model.ReservationView?.FullName" class="form-control" readonly>
                     </div>
                 </div>
             </div>

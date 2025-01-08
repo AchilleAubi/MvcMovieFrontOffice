@@ -41,15 +41,24 @@ public class VehicleService(string? connectionString)
         return vehicles;
     }
 
-    public async Task<List<VehicleView>> GetVehiclesViewAsync(int offset, int limit, string? model = null, string? make = null, string? vehicleType = null, bool? availability = null)
+    public async Task<List<VehicleView>> GetVehiclesViewAsync(int offset, int limit, string? model = null, string? make = null, string? vehicleType = null, bool? availability = null, DateTime? filterDate = null)
     {
         var vehicles = new List<VehicleView>();
-        var query = @"SELECT * FROM VehicleView 
-                      WHERE (@Model IS NULL OR Model LIKE '%' + @Model + '%') 
-                        AND (@Make IS NULL OR Make LIKE '%' + @Make + '%') 
-                        AND (@VehicleType IS NULL OR VehicleType = @VehicleType) 
-                        AND (@Availability IS NULL OR Availability = @Availability)
-                      ORDER BY VehicleId
+        var query = @"SELECT * FROM VehicleView V
+                      WHERE (@Model IS NULL OR V.Model LIKE '%' + @Model + '%') 
+                        AND (@Make IS NULL OR V.Make LIKE '%' + @Make + '%') 
+                        AND (@VehicleType IS NULL OR V.VehicleType = @VehicleType) 
+                        AND (@Availability IS NULL OR V.Availability = @Availability)
+                        AND (@FilterDate IS NULL OR 
+                         NOT EXISTS (
+                             SELECT 1 
+                             FROM reservations R 
+                             WHERE R.vehicleId = V.VehicleId 
+                               AND R.status IN ('confirmed') 
+                               AND @FilterDate BETWEEN R.startDate AND R.endDate
+                         )
+                        )
+                      ORDER BY V.VehicleId
                       OFFSET @Offset ROWS FETCH NEXT @Limit ROWS ONLY";
 
         using (var connection = new SqlConnection(_connectionString))
@@ -61,7 +70,43 @@ public class VehicleService(string? connectionString)
             command.Parameters.AddWithValue("@Availability", (object?)availability ?? DBNull.Value);
             command.Parameters.AddWithValue("@Offset", offset);
             command.Parameters.AddWithValue("@Limit", limit);
+            command.Parameters.AddWithValue("@FilterDate", (object?)filterDate ?? DBNull.Value);
 
+            await connection.OpenAsync();
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                while (await reader.ReadAsync())
+                {
+                    vehicles.Add(new VehicleView(
+                        vehicleId: reader.GetInt32("VehicleId"),
+                        model: reader.GetString("Model"),
+                        make: reader.GetString("Make"),
+                        year: reader.GetInt32("Year"),
+                        availability: reader.GetBoolean("Availability"),
+                        price: reader.GetInt32("Price"),
+                        createdAt: reader.GetDateTime("CreatedAt"),
+                        updatedAt: reader.GetDateTime("UpdatedAt"),
+                        vehicleTypeId: reader.GetInt32("VehicleTypeId"),
+                        vehicleType: reader.GetString("VehicleType"),
+                        vehicleImage: reader.GetString("VehicleImage")
+                    ));
+
+                }
+            }
+        }
+
+        return vehicles;
+    }
+    
+    public async Task<List<VehicleView>> GetSpecificVehiclesViewAsync()
+    {
+        var vehicles = new List<VehicleView>();
+        var query = @"SELECT * FROM VehicleView V
+                  WHERE V.VehicleId IN (1, 8, 16)";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
             await connection.OpenAsync();
             using (var reader = await command.ExecuteReaderAsync())
             {
@@ -87,13 +132,22 @@ public class VehicleService(string? connectionString)
         return vehicles;
     }
 
-    public async Task<int> GetTotalVehicleViewCountAsync(string? model = null, string? make = null, string? vehicleType = null, bool? availability = null)
+    public async Task<int> GetTotalVehicleViewCountAsync(string? model = null, string? make = null, string? vehicleType = null, bool? availability = null, DateTime? filterDate = null)
     {
-        var query = @"SELECT COUNT(*) FROM VehicleView 
-                      WHERE (@Model IS NULL OR Model LIKE '%' + @Model + '%') 
-                        AND (@Make IS NULL OR Make LIKE '%' + @Make + '%') 
-                        AND (@VehicleType IS NULL OR VehicleType = @VehicleType) 
-                        AND (@Availability IS NULL OR Availability = @Availability)";
+        var query = @"SELECT COUNT(*) FROM VehicleView V
+                      WHERE (@Model IS NULL OR V.Model LIKE '%' + @Model + '%') 
+                        AND (@Make IS NULL OR V.Make LIKE '%' + @Make + '%') 
+                        AND (@VehicleType IS NULL OR V.VehicleType = @VehicleType) 
+                        AND (@Availability IS NULL OR V.Availability = @Availability)
+                        AND (@FilterDate IS NULL OR 
+                         NOT EXISTS (
+                             SELECT 1 
+                             FROM reservations R 
+                             WHERE R.vehicleId = V.VehicleId 
+                               AND R.status IN ('confirmed') 
+                               AND @FilterDate BETWEEN R.startDate AND R.endDate
+                         )
+                        )";
 
         using (var connection = new SqlConnection(_connectionString))
         using (var command = new SqlCommand(query, connection))
@@ -102,6 +156,7 @@ public class VehicleService(string? connectionString)
             command.Parameters.AddWithValue("@Make", (object?)make ?? DBNull.Value);
             command.Parameters.AddWithValue("@VehicleType", (object?)vehicleType ?? DBNull.Value);
             command.Parameters.AddWithValue("@Availability", (object?)availability ?? DBNull.Value);
+            command.Parameters.AddWithValue("@FilterDate", (object?)filterDate ?? DBNull.Value);
 
             await connection.OpenAsync();
             return (int)await command.ExecuteScalarAsync();

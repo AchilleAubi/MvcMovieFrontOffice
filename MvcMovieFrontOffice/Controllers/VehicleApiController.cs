@@ -77,17 +77,17 @@ public class VehicleApiController(VehicleService vehicleService) : Controller
     
     [HttpGet]
     [Route("api/vehicles/view")]
-    public async Task<IActionResult> GetVehiclesViewApi([FromQuery] string? model = null, [FromQuery] string? make = null, [FromQuery] string? vehicleType = null, [FromQuery] bool? availability = null, [FromQuery] int offset = 0, [FromQuery] int limit = 6)
+    public async Task<IActionResult> GetVehiclesViewApi([FromQuery] string? model = null, [FromQuery] string? make = null, [FromQuery] string? vehicleType = null, [FromQuery] bool? availability = null, [FromQuery] DateTime? filterDate = null, [FromQuery] int offset = 0, [FromQuery] int limit = 6)
     {
-        var vehicles = await _vehicleService.GetVehiclesViewAsync(offset, limit, model, make, vehicleType, availability);
+        var vehicles = await _vehicleService.GetVehiclesViewAsync(offset, limit, model, make, vehicleType, availability, filterDate);
         return Json(vehicles);
     }
     
     [HttpGet]
     [Route("api/vehicles/view/total")]
-    public async Task<IActionResult> GetTotalVehicleViewCountAsync([FromQuery] string? make = null, [FromQuery] string? model = null, [FromQuery] string? vehicleType = null, [FromQuery] bool? availability = null)
+    public async Task<IActionResult> GetTotalVehicleViewCountAsync([FromQuery] string? make = null, [FromQuery] string? model = null, [FromQuery] string? vehicleType = null, [FromQuery] bool? availability = null, [FromQuery] DateTime? filterDate = null)
     {
-        int totalVehicleViewCountAsync = await _vehicleService.GetTotalVehicleViewCountAsync(make, model, vehicleType, availability);
+        int totalVehicleViewCountAsync = await _vehicleService.GetTotalVehicleViewCountAsync(make, model, vehicleType, availability, filterDate);
         return Ok(totalVehicleViewCountAsync);
     }
 

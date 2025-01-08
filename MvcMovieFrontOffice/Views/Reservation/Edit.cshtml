@@ -4,9 +4,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1 class="text-center my-4">Edit Reservation</h1>
-
-<div class="container">
+<div class="container" style="padding-top: 6%">
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
             <h4 class="mb-0">Edit Reservation Details</h4>
@@ -19,12 +17,12 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label asp-for="VehicleId" class="form-label fw-bold"></label>
-                        <input asp-for="VehicleId" class="form-control" />
+                        <input asp-for="VehicleId" class="form-control" readonly/>
                         <span asp-validation-for="VehicleId" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="UserId" class="form-label fw-bold"></label>
-                        <input asp-for="UserId" class="form-control" />
+                        <input asp-for="UserId" class="form-control" readonly/>
                         <span asp-validation-for="UserId" class="text-danger"></span>
                     </div>
                 </div>
@@ -53,7 +51,7 @@
                     </div>
                     <div class="col-md-6">
                         <label asp-for="TotalPrice" class="form-label fw-bold"></label>
-                        <input asp-for="TotalPrice" type="number" class="form-control" />
+                        <input asp-for="TotalPrice" type="number" class="form-control" readonly/>
                         <span asp-validation-for="TotalPrice" class="text-danger"></span>
                     </div>
                 </div>

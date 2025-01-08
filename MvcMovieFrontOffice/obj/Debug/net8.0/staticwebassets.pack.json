@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets/images/account-bg.jpg"
     },
     {
+      "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/head-bg.jpg",
+      "PackagePath": "staticwebassets/images/head-bg.jpg"
+    },
+    {
       "Id": "/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/wwwroot/images/icon/Untitled-1.jpg",
       "PackagePath": "staticwebassets/images/icon/Untitled-1.jpg"
     },
