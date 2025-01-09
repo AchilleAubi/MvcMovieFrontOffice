@@ -7,7 +7,7 @@ public class PaymentService(string? connectionString)
 {
     private readonly string _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
    
-    public async Task<List<Payment>> GetAllReservationsAsync()
+    public async Task<List<Payment>> GetAllPaymentsAsync()
     {
         var payment = new List<Payment>();
         using var connection = new SqlConnection(_connectionString);
@@ -23,13 +23,27 @@ public class PaymentService(string? connectionString)
         return payment;
     }
 
-    public async Task<List<Payment>> GetPaymentByUserIdAsync(string? id)
+    public async Task<List<Payment>> GetPaymentByUserIdAsync(string? id, DateTime? startDate, DateTime? endDate)
     {
         var payments = new List<Payment>();
         using var connection = new SqlConnection(_connectionString);
-        var command = new SqlCommand("SELECT * FROM Payments WHERE UserId = @Id", connection);
-        command.Parameters.AddWithValue("@Id", id);
         
+        var query = "SELECT * FROM Payments WHERE UserId = @Id";
+    
+        if (startDate.HasValue)
+            query += " AND PaymentDate >= @StartDate";
+        if (endDate.HasValue)
+            query += " AND PaymentDate <= @EndDate";
+    
+        var command = new SqlCommand(query, connection);
+        command.Parameters.AddWithValue("@Id", id);
+    
+        if (startDate.HasValue)
+            command.Parameters.AddWithValue("@StartDate", startDate.Value);
+    
+        if (endDate.HasValue)
+            command.Parameters.AddWithValue("@EndDate", endDate.Value);
+    
         await connection.OpenAsync();
         using var reader = await command.ExecuteReaderAsync();
         while (await reader.ReadAsync())

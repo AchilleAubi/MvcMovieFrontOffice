@@ -329,3 +329,12 @@
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Common.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 /home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/EPPlus.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/EPPlus.Interfaces.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/EPPlus.System.Drawing.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/System.Drawing.Common.dll
+/home/fanomezantsoa/RiderProjects/MvcMovieFrontOffice/MvcMovieFrontOffice/bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll

@@ -6,9 +6,32 @@
 
 <div class="container mt-4" style="padding-top: 6%">
     <h1 class="text-center mb-4">Your Payment List</h1>
+
+    <!-- Export Button -->
+    <div class="text-end mb-4">
+        <form asp-action="ExportDataToExcel" method="post" class="d-inline-block">
+            <button type="submit" class="btn btn-danger">
+                Generate Excel File
+            </button>
+        </form>
+    </div>
     
-    <table class="table table-bordered table-striped table-hover">
-        <thead class="thead-dark">
+    <div class="mb-4">
+        <form asp-action="Index" method="get" class="d-flex justify-content-start align-items-center">
+            <div class="input-group" style="width: 50%">
+                <input type="date" name="startDate" class="form-control" value="@ViewData["StartDate"]" />
+                <span class="input-group-text">to</span>
+                <input type="date" name="endDate" class="form-control" value="@ViewData["EndDate"]" />
+            </div>
+            <button type="submit" class="btn btn-outline-danger ms-2">Filter</button>
+        </form>
+    </div>
+
+
+    <!-- Table Section -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
             <tr>
                 <th class="text-center">N°</th>
                 <th class="text-center">Reservation N°</th>
@@ -16,8 +39,8 @@
                 <th class="text-center">Payment Method</th>
                 <th class="text-center">Amount</th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             @foreach (var item in Model)
             {
                 <tr>
@@ -25,9 +48,10 @@
                     <td class="text-center">@item.ReservationId</td>
                     <td class="text-center">@item.PaymentDate.ToString("MM/dd/yyyy")</td>
                     <td class="text-center">@item.PaymentMethod</td>
-                    <td class="text-center">@item.Amount €</td>
+                    <td class="text-center text-success font-weight-bold">@item.Amount €</td>
                 </tr>
             }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </div>
