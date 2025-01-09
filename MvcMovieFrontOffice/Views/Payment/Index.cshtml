@@ -1,0 +1,33 @@
+@model List<Payment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-4" style="padding-top: 6%">
+    <h1 class="text-center mb-4">Your Payment List</h1>
+    
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th class="text-center">N°</th>
+                <th class="text-center">Reservation N°</th>
+                <th class="text-center">Payment Date</th>
+                <th class="text-center">Payment Method</th>
+                <th class="text-center">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@item.Id</td>
+                    <td class="text-center">@item.ReservationId</td>
+                    <td class="text-center">@item.PaymentDate.ToString("MM/dd/yyyy")</td>
+                    <td class="text-center">@item.PaymentMethod</td>
+                    <td class="text-center">@item.Amount €</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

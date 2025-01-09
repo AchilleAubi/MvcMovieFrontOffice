@@ -5,7 +5,7 @@ namespace MvcMovieFrontOffice.Models;
 
 public class Reservation
 {
-    public Reservation(int id, int vehicleId, string? userId, DateTime startDate, DateTime endDate, string status, int totalPrice, DateTime? createdAt, DateTime? updatedAt)
+    public Reservation(int id, int vehicleId, string? userId, DateTime startDate, DateTime endDate, string status, int totalPrice, DateTime? createdAt, DateTime? updatedAt, int amount)
     {
         Id = id;
         VehicleId = vehicleId;
@@ -16,6 +16,7 @@ public class Reservation
         TotalPrice = totalPrice;
         CreatedAt = createdAt;
         UpdatedAt = updatedAt;
+        Amount = amount;
     }
 
     public Reservation()
@@ -43,5 +44,10 @@ public class Reservation
     
     public DateTime? CreatedAt { get; set; }
 
-    public DateTime? UpdatedAt { get; set; } 
+    public DateTime? UpdatedAt { get; set; }
+
+    public int Amount { get; set; }
+
+    [NotMapped]
+    public int PaymentAmount { get; set; }
 }

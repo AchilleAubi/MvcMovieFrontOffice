@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using MvcMovieFrontOffice.Services;
 
 namespace MvcMovieFrontOffice.Pages.VehicleBo;
 
+[Authorize(Roles = "Admin")]
 public class Edit(ApiService apiService, ApplicationDbContext context) : PageModel
 {
     [BindProperty]

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using MvcMovieFrontOffice.Models;
 
 namespace MvcMovieFrontOffice.Pages.VehicleBo;
 
+[Authorize(Roles = "Admin")]
 public class Delete(ApplicationDbContext context) : PageModel
 {
     [BindProperty] public Vehicle Vehicle { get; set; } = default!;

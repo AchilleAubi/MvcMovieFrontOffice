@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -5,6 +6,7 @@ using MvcMovieFrontOffice.Models;
 
 namespace MvcMovieFrontOffice.Pages.Admin;
 
+[Authorize(Roles = "Admin")]
 public class Edit : PageModel
 {
     private readonly UserManager<Users> _userManager;

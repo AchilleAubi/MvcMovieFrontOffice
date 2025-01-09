@@ -9,45 +9,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe2d39d-e915-415e-b128-bd198e9ad728" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/PaymentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/WalletController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Models/Payment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Models/Wallet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/PaymentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/WalletService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Payment/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Payment/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Wallet/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/ReservationBo/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/ReservationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/ReservationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Models/Reservation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Models/Reservation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Account/UpdateProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Account/UpdateProfile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/InvoiceService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/InvoiceService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/ReservationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/ReservationService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Reservation/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.MvcMovieFrontOffice.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/staticwebassets/msbuild.MvcMovieFrontOffice.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/wwwroot/images/logo.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +63,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6c4b901f88a949b5a720cc208c735084a800/68/a65c17bc/HtmlToPdfDocument.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7bcb2a57242a4f8da1f935206d7616f036200/4c/ea6752ca/RazorPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7bcb2a57242a4f8da1f935206d7616f036200/ef/8873dcda/RazorPage`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97a69d80d98d4de79c21a378bb33fb711dc400/f5/a0581f82/ControllerBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da46462c94e34c02a5141d1a98fb6d59b138/3b/fa5514f3/IdentityUser`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e448e8ab0e0746859db05ba1681bb55713600/c6/913a9126/ClaimsPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
@@ -204,7 +197,7 @@
       <workItem from="1736185409099" duration="5340000" />
       <workItem from="1736242331338" duration="848000" />
       <workItem from="1736281448759" duration="2480000" />
-      <workItem from="1736352803868" duration="2549000" />
+      <workItem from="1736352803868" duration="15895000" />
     </task>
     <servers />
   </component>

@@ -4,43 +4,25 @@
     ViewData["Title"] = "Edit";
 }
 
-<div class="container" style="padding-top: 6%">
+<div class="container mt-5" style="padding-top: 6%">
     <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-danger text-white">
             <h4 class="mb-0">Edit Reservation Details</h4>
         </div>
         <div class="card-body">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
                 <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="UserId"/>
+                <input asp-for="CreatedAt" type="hidden"/>
+                <input asp-for="UpdatedAt" type="hidden"/>
 
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <label asp-for="VehicleId" class="form-label fw-bold"></label>
+                        <label asp-for="VehicleId" class="form-label fw-bold">Vehicle N°</label>
                         <input asp-for="VehicleId" class="form-control" readonly/>
                         <span asp-validation-for="VehicleId" class="text-danger"></span>
                     </div>
-                    <div class="col-md-6">
-                        <label asp-for="UserId" class="form-label fw-bold"></label>
-                        <input asp-for="UserId" class="form-control" readonly/>
-                        <span asp-validation-for="UserId" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="row g-3 mt-3">
-                    <div class="col-md-6">
-                        <label asp-for="StartDate" class="form-label fw-bold"></label>
-                        <input asp-for="StartDate" type="date" class="form-control" />
-                        <span asp-validation-for="StartDate" class="text-danger"></span>
-                    </div>
-                    <div class="col-md-6">
-                        <label asp-for="EndDate" class="form-label fw-bold"></label>
-                        <input asp-for="EndDate" type="date" class="form-control" />
-                        <span asp-validation-for="EndDate" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="row g-3 mt-3">
                     <div class="col-md-6">
                         <label asp-for="Status" class="form-label fw-bold"></label>
                         <select asp-for="Status" class="form-select">
@@ -49,8 +31,29 @@
                         </select>
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
+                </div>
+
+                <div class="row g-3 mt-3">
                     <div class="col-md-6">
-                        <label asp-for="TotalPrice" class="form-label fw-bold"></label>
+                        <label asp-for="StartDate" class="form-label fw-bold">Start Date</label>
+                        <input asp-for="StartDate" type="date" class="form-control" />
+                        <span asp-validation-for="StartDate" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="EndDate" class="form-label fw-bold">End Date</label>
+                        <input asp-for="EndDate" type="date" class="form-control" />
+                        <span asp-validation-for="EndDate" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <label asp-for="Amount" class="form-label fw-bold">Amount Payed (€)</label>
+                        <input asp-for="Amount" type="number" class="form-control" readonly/>
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TotalPrice" class="form-label fw-bold">Total Price (€)</label>
                         <input asp-for="TotalPrice" type="number" class="form-control" readonly/>
                         <span asp-validation-for="TotalPrice" class="text-danger"></span>
                     </div>
@@ -58,22 +61,26 @@
 
                 <div class="row g-3 mt-3">
                     <div class="col-md-6">
-                        <label asp-for="CreatedAt" class="form-label fw-bold"></label>
-                        <input asp-for="CreatedAt" type="datetime-local" class="form-control" readonly />
-                        <span asp-validation-for="CreatedAt" class="text-danger"></span>
-                    </div>
-                    <div class="col-md-6">
-                        <label asp-for="UpdatedAt" class="form-label fw-bold"></label>
-                        <input asp-for="UpdatedAt" type="datetime-local" class="form-control" readonly />
-                        <span asp-validation-for="UpdatedAt" class="text-danger"></span>
+                        <label for="PaymentAmount" class="form-label fw-bold">Payment Amount (€)</label>
+                        <input id="PaymentAmount" name="PaymentAmount" type="number" class="form-control" />
+                        <span asp-validation-for="PaymentAmount" class="text-danger"></span>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center mt-4">
                     <a asp-action="Index" class="btn btn-secondary">Back to List</a>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-danger">Save</button>
                 </div>
             </form>
+            
+            <br/>
+
+            @if(ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
         </div>
     </div>
 </div>

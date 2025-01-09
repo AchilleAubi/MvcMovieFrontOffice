@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MvcMovieFrontOffice.Models;
@@ -5,6 +6,7 @@ using MvcMovieFrontOffice.Services;
 
 namespace MvcMovieFrontOffice.Pages.VehicleBo;
 
+[Authorize(Roles = "Admin")]
 public class Index : PageModel
 {
     private readonly ApiService _apiService;

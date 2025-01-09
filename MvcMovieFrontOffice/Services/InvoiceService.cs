@@ -46,6 +46,7 @@ public class InvoiceService
         AddRow(table, "End Date", reservation.EndDate.ToString("dd/MM/yyyy"));
         AddRow(table, "Status", reservation.Status);
         AddRow(table, "Total Amount", reservation.TotalPrice.ToString("C"));
+        AddRow(table, "Amount Payed", reservation.Amount.ToString("C"));
         
         section.AddParagraph().Format.SpaceAfter = 20;
     }

@@ -58,17 +58,19 @@ public class ReservationService(string? connectionString)
         return reservations;
     }
 
-    public async Task CreateReservationAsync(Reservation reservation)
+    public async Task<int> CreateReservationAsync(Reservation reservation)
     {
         using var connection = new SqlConnection(_connectionString);
         var command = new SqlCommand(
-            "INSERT INTO Reservations (VehicleId, UserId, StartDate, EndDate, Status, TotalPrice, CreatedAt, UpdatedAt) " +
-            "VALUES (@VehicleId, @UserId, @StartDate, @EndDate, @Status, @TotalPrice, @CreatedAt, @UpdatedAt)", connection);
+            "INSERT INTO Reservations (VehicleId, UserId, StartDate, EndDate, Status, TotalPrice, CreatedAt, UpdatedAt, Amount) " +
+            "OUTPUT INSERTED.Id " +
+            "VALUES (@VehicleId, @UserId, @StartDate, @EndDate, @Status, @TotalPrice, @CreatedAt, @UpdatedAt, @Amount)", connection);
 
         AddReservationParameters(command, reservation);
 
         await connection.OpenAsync();
-        await command.ExecuteNonQueryAsync();
+        var reservationId = (int)await command.ExecuteScalarAsync();
+        return reservationId;
     }
 
     public async Task UpdateReservationAsync(Reservation reservation)
@@ -76,7 +78,7 @@ public class ReservationService(string? connectionString)
         using var connection = new SqlConnection(_connectionString);
         var command = new SqlCommand(
             "UPDATE Reservations SET VehicleId = @VehicleId, UserId = @UserId, StartDate = @StartDate, EndDate = @EndDate, " +
-            "Status = @Status, TotalPrice = @TotalPrice, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt WHERE Id = @Id", connection);
+            "Status = @Status, TotalPrice = @TotalPrice, CreatedAt = @CreatedAt, UpdatedAt = @UpdatedAt, Amount = @Amount WHERE Id = @Id", connection);
 
         AddReservationParameters(command, reservation);
         command.Parameters.AddWithValue("@Id", reservation.Id);
@@ -117,7 +119,8 @@ public class ReservationService(string? connectionString)
             status: reader.GetString(reader.GetOrdinal("Status")),
             totalPrice: reader.GetInt32(reader.GetOrdinal("TotalPrice")),
             createdAt: reader.IsDBNull(reader.GetOrdinal("CreatedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("CreatedAt")),
-            updatedAt: reader.IsDBNull(reader.GetOrdinal("UpdatedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("UpdatedAt"))
+            updatedAt: reader.IsDBNull(reader.GetOrdinal("UpdatedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("UpdatedAt")),
+            amount: reader.GetInt32(reader.GetOrdinal("Amount"))
         );
     }
 
@@ -131,5 +134,6 @@ public class ReservationService(string? connectionString)
         command.Parameters.AddWithValue("@TotalPrice", reservation.TotalPrice);
         command.Parameters.AddWithValue("@CreatedAt", reservation.CreatedAt ?? (object)DBNull.Value);
         command.Parameters.AddWithValue("@UpdatedAt", reservation.UpdatedAt ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@Amount", reservation.Amount);
     }
 }

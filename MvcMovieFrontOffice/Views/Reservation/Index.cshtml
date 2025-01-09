@@ -10,11 +10,13 @@
     <table class="table table-bordered table-striped table-hover">
         <thead class="thead-dark">
             <tr>
-                <th class="text-center">Vehicle</th>
-                <th class="text-center">@Html.DisplayNameFor(model => model.StartDate)</th>
-                <th class="text-center">@Html.DisplayNameFor(model => model.EndDate)</th>
+                <th class="text-center">Vehicle N°</th>
+                <th class="text-center">Start Date</th>
+                <th class="text-center">End Date</th>
                 <th class="text-center">@Html.DisplayNameFor(model => model.Status)</th>
-                <th class="text-center">@Html.DisplayNameFor(model => model.TotalPrice)</th>
+                <th class="text-center">Total Price</th>
+                <th class="text-center">@Html.DisplayNameFor(model => model.Amount) Payed</th>
+                <th class="text-center">Rest</th>
                 <th class="text-center" style="width: 10px">Actions</th>
             </tr>
         </thead>
@@ -34,7 +36,9 @@
                             @Html.DisplayFor(modelItem => item.Status)
                         </span>
                     </td>
-                    <td class="text-center">@Html.DisplayFor(modelItem => item.TotalPrice)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.TotalPrice) €</td>
+                    <td class="text-center">@Html.DisplayFor(modelIem => item.Amount) €</td>
+                    <td class="text-center color-primary">@(@item.TotalPrice - @item.Amount) €</td>
                     <td class="text-center">
                         <div class="d-flex justify-content-start">
                             <a class="btn btn-info btn-sm me-2" asp-action="Details" asp-route-id="@item.Id">Details</a>

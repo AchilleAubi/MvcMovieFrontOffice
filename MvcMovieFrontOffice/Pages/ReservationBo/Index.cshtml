@@ -6,28 +6,66 @@
     Layout = "_AdminLayout";
 }
 
-<div class="table-responsive table-responsive-data2">
+<div class="table-data__tool-left">
+    <h3 class="title-5 m-b-25">Reservation List</h3>
+    <form method="get" class="table-data__tool-left">
+        
+        <div class="rs-select2--light rs-select2--md" style="width: 300px">
+            <input type="text" id="Keyword" name="keyword" class="form-control" value="@Request.Query["keyword"]" placeholder="Keyword"/>
+        </div>
+
+        <div class="rs-select2--light rs-select2--md ml-4">
+            <select id="StatusFilter" name="statusFilter" class="form-control">
+                <option value="">Status</option>
+                <option value="pending" @(Request.Query["statusFilter"] == "pending" ? "selected" : "")>Pending</option>
+                <option value="confirmed" @(Request.Query["statusFilter"] == "confirmed" ? "selected" : "")>Confirmed</option>
+                <option value="completed" @(Request.Query["statusFilter"] == "completed" ? "selected" : "")>Completed</option>
+                <option value="canceled" @(Request.Query["statusFilter"] == "canceled" ? "selected" : "")>Canceled</option>
+            </select>
+        </div>
+
+        <div class="rs-select2--light rs-select2--md ml-4">
+            <label for="StartDateFilter" class="form-label">Start Date</label>
+            <input type="date" id="StartDateFilter" name="startDateFilter" class="form-control" value="@Request.Query["startDateFilter"]"/>
+        </div>
+
+        <div class="rs-select2--light rs-select2--md ml-4">
+            <label for="EndDateFilter" class="form-label">End Date</label>
+            <input type="date" id="EndDateFilter" name="endDateFilter" class="form-control" value="@Request.Query["endDateFilter"]"/>
+        </div>
+
+        <button type="submit" class="au-btn-filter ml-5">
+            <i class="zmdi zmdi-filter-list"></i> Filter
+        </button>
+
+        <button class="au-btn-filter">
+            <a href="?">Reset</a>
+        </button>
+    </form>
+</div>
+
+<div class="table-responsive table-responsive-data2 mt-3">
     <table class="table table-data2">
         <thead>
         <tr>
             <th>Id</th>
             <th>
-                @Html.DisplayNameFor(model => model.ReservationView[0].StartDate)
+                Start Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReservationView[0].EndDate)
+                End Date
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ReservationView[0].Status)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReservationView[0].TotalPrice)
+                Total Price
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReservationView[0].Model)
+                Rest
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReservationView[0].make)
+                Vehicle
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ReservationView[0].availability)
@@ -50,12 +88,12 @@
                     <td>
                         @reservation.ReservationId
                     </td>
-                    <td class="desc">@reservation.StartDate</td>
-                    <td>@reservation.EndDate</td>
+                    <td class="desc">@reservation.StartDate.ToString("MM/dd/yyyy")</td>
+                    <td>@reservation.EndDate.ToString("MM/dd/yyyy")</td>
                     <td>@reservation.Status</td>
-                    <td>@reservation.TotalPrice</td>
-                    <td>@reservation.Model</td>
-                    <td>@reservation.make</td>
+                    <td>@reservation.TotalPrice €</td>
+                    <td style="color: #ef1616">@(@reservation.TotalPrice - @reservation.AmountPayed) €</td>
+                    <td>@reservation.Model - @reservation.make</td>
                     <td>
                         <span class="@(@reservation.availability ? "status--process" : "status--denied")">
                             @reservation.availability
@@ -65,15 +103,6 @@
                     <td>@reservation.Email</td>
                     <td>
                         <div class="table-data-feature">
-                        @*
-                            @if (reservation.availability)
-                            {
-                                <a class="item" data-toggle="tooltip" data-placement="top" title="Delete"
-                                   href="/ReservationBo/Delete?id=@reservation.ReservationId">
-                                    <i class="zmdi zmdi-delete"></i>
-                                </a>
-                            }
-                            *@
                             <a class="item" data-toggle="tooltip" data-placement="top" title="Edit"
                                href="/ReservationBo/Edit?id=@reservation.ReservationId">
                                 <i class="zmdi zmdi-edit"></i>
@@ -82,7 +111,7 @@
                                     data-id="@reservation.ReservationId"
                                     data-name="@reservation.FullName"
                                     data-email="@reservation.Email"
-                                    data-message="Reservation ID: @reservation.ReservationId | Start Date: @reservation.StartDate | End Date: @reservation.EndDate | Status: @reservation.Status | Total Price: @reservation.TotalPrice | Model: @reservation.Model | Make: @reservation.make"
+                                    data-message="Reservation ID: @reservation.ReservationId | Start Date: @reservation.StartDate | End Date: @reservation.EndDate | Status: @reservation.Status | Total Price: @reservation.TotalPrice | Amount Payed: @reservation.AmountPayed | Model: @reservation.Model | Make: @reservation.make"
                                     data-toggle="tooltip" data-placement="top" title="Send Email">
                                 <i class="zmdi zmdi-email"></i>
                             </button>
@@ -98,6 +127,31 @@
         }
         </tbody>
     </table>
+</div>
+
+<div class="pagination mt-3" style="text-align: center; justify-content: center">
+    <ul class="pagination">
+        @if (Model.CurrentPage > 1)
+        {
+            <li class="page-item">
+                <a class="page-link" href="?pageIndex=@(Model.CurrentPage - 1)&statusFilter=@Model.StatusFilter&keyword=@Model.Keyword&startDateFilter=@Model.StartDateFilter&endDateFilter=@Model.EndDateFilter">Previous</a>
+            </li>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item mx-1 @(i == Model.CurrentPage ? "active" : "")">
+                <a class="page-link" href="?pageIndex=@i&statusFilter=@Model.StatusFilter&keyword=@Model.Keyword&startDateFilter=@Model.StartDateFilter&endDateFilter=@Model.EndDateFilter">@i</a>
+            </li>
+        }
+
+        @if (Model.CurrentPage < Model.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" href="?pageIndex=@(Model.CurrentPage + 1)&statusFilter=@Model.StatusFilter&keyword=@Model.Keyword&startDateFilter=@Model.StartDateFilter&endDateFilter=@Model.EndDateFilter">Next</a>
+            </li>
+        }
+    </ul>
 </div>
 
 <form id="emailForm" style="display: none" class="php-email-form mt-4">

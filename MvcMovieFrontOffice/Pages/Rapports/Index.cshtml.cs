@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,7 @@ using MvcMovieFrontOffice.Models;
 
 namespace MvcMovieFrontOffice.Pages.Rapports;
 
+[Authorize(Roles = "Admin")]
 public class Index : PageModel
 {
     private readonly ApplicationDbContext _context;

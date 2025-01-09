@@ -4,7 +4,7 @@ namespace MvcMovieFrontOffice.Models;
 
 public class ReservationView
 {
-    public ReservationView(int reservationId, DateTime startDate, DateTime endDate, string status, int totalPrice, int vehicleId, string model, string make, bool availability, string userId, string fullName, string email)
+    public ReservationView(int reservationId, DateTime startDate, DateTime endDate, string status, int totalPrice, int vehicleId, string model, string make, bool availability, string userId, string fullName, string email, int amountPayed)
     {
         ReservationId = reservationId;
         StartDate = startDate;
@@ -18,6 +18,7 @@ public class ReservationView
         UserId = userId;
         FullName = fullName;
         Email = email;
+        AmountPayed = amountPayed;
     }
 
     public ReservationView()
@@ -37,4 +38,6 @@ public class ReservationView
     public string UserId { get; set; }
     public string FullName { get; set; }
     public string Email { get; set; }
+
+    public int AmountPayed { get; set; }
 }

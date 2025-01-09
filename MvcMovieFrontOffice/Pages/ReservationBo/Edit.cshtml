@@ -6,103 +6,99 @@
     Layout = "_AdminLayout";
 }
 
-<div class="card">
-    <div class="card-header">
-        <strong>Edit reservation: @Model.ReservationView?.ReservationId</strong>
+<div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">
+            <i class="fa fa-edit"></i> Edit Reservation: @Model.ReservationView?.ReservationId
+        </h5>
     </div>
-    <div class="card-body card-block">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="card-body">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
         <input type="hidden" name="id" value="@Model.ReservationView?.ReservationId" />
+
         <div class="row">
-            <div class="col-md-6">
-                <!-- Model -->
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="startDate" class="form-control-label">Start Date</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="date" id="startDate" name="startDate" value="@Model.ReservationView?.StartDate.ToString("yyyy-MM-dd")" class="form-control" readonly>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="endDate" class="form-control-label">End Date</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="date" id="endDate" name="endDate" value="@Model.ReservationView?.EndDate.ToString("yyyy-MM-dd")" class="form-control" readonly>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="status" class="form-control-label">Status</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <select id="status" name="status" class="form-control">
-                            <option value="pending" @(Model.ReservationView?.Status == "pending" ? "selected" : "")>pending</option>
-                            <option value="confirmed" @(Model.ReservationView?.Status == "confirmed" ? "selected" : "")>confirmed</option>
-                            <option value="completed" @(Model.ReservationView?.Status == "completed" ? "selected" : "")>completed</option>
-                            <option value="canceled" @(Model.ReservationView?.Status == "canceled" ? "selected" : "")>canceled</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Make -->
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="totalPrice" class="form-control-label">Total Price</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="number" id="totalPrice" name="totalPrice" value="@Model.ReservationView?.TotalPrice" class="form-control" readonly>
-                    </div>
-                </div>
-                <!-- Year -->
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="model" class="form-control-label">Model</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="text" id="model" name="model" value="@Model.ReservationView?.Model" class="form-control" readonly>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="make" class="form-control-label">Make</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="text" id="make" name="make" value="@Model.ReservationView?.make" class="form-control" readonly>
-                    </div>
-                </div>
-                <!-- Price -->
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="availability" class="form-control-label">Availability</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <select id="availability" name="availability" class="form-control">
-                            <option value="true" @(Model.ReservationView?.availability == true ? "selected" : null)>Available</option>
-                            <option value="false" @(Model.ReservationView?.availability == false ? "selected" : null)>Unavailable</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <div class="col col-md-3">
-                        <label for="fullname" class="form-control-label">FullName</label>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <input type="text" id="fullname" name="fullname" value="@Model.ReservationView?.FullName" class="form-control" readonly>
-                    </div>
-                </div>
+            <!-- Start Date & End Date -->
+            <div class="col-md-6 mb-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" id="startDate" name="startDate"
+                       value="@Model.ReservationView?.StartDate.ToString("yyyy-MM-dd")"
+                       class="form-control" readonly>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" id="endDate" name="endDate"
+                       value="@Model.ReservationView?.EndDate.ToString("yyyy-MM-dd")"
+                       class="form-control" readonly>
+            </div>
+
+            <!-- Status -->
+            <div class="col-md-6 mb-3">
+                <label for="status" class="form-label">Status</label>
+                <select id="status" name="status" class="form-select">
+                    <option value="pending" @(Model.ReservationView?.Status == "pending" ? "selected" : "")>Pending</option>
+                    <option value="confirmed" @(Model.ReservationView?.Status == "confirmed" ? "selected" : "")>Confirmed</option>
+                    <option value="completed" @(Model.ReservationView?.Status == "completed" ? "selected" : "")>Completed</option>
+                    <option value="canceled" @(Model.ReservationView?.Status == "canceled" ? "selected" : "")>Canceled</option>
+                </select>
+            </div>
+
+            <!-- Total Price & Rest -->
+            <div class="col-md-6 mb-3">
+                <label for="totalPrice" class="form-label">Total Price (€)</label>
+                <input type="number" id="totalPrice" name="totalPrice"
+                       value="@Model.ReservationView?.TotalPrice"
+                       class="form-control" readonly>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="rest" class="form-label">Rest (€)</label>
+                <input type="number" id="rest" name="rest"
+                       value="@(@Model.ReservationView?.TotalPrice - @Model.ReservationView?.AmountPayed)"
+                       class="form-control" readonly>
+            </div>
+
+            <!-- Model & Make -->
+            <div class="col-md-6 mb-3">
+                <label for="model" class="form-label">Model</label>
+                <input type="text" id="model" name="model"
+                       value="@Model.ReservationView?.Model"
+                       class="form-control" readonly>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="make" class="form-label">Make</label>
+                <input type="text" id="make" name="make"
+                       value="@Model.ReservationView?.make"
+                       class="form-control" readonly>
+            </div>
+
+            <!-- Availability -->
+            <div class="col-md-6 mb-3">
+                <label for="availability" class="form-label">Availability</label>
+                <select id="availability" name="availability" class="form-select">
+                    <option value="true" @(Model.ReservationView?.availability == true ? "selected" : null)>Available</option>
+                    <option value="false" @(Model.ReservationView?.availability == false ? "selected" : null)>Unavailable</option>
+                </select>
+            </div>
+
+            <!-- Full Name -->
+            <div class="col-md-6 mb-3">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                       value="@Model.ReservationView?.FullName"
+                       class="form-control" readonly>
             </div>
         </div>
-        <div class="card-footer">
-            <button id="saveButton" class="btn btn-primary btn-sm">
-                <i class="zmdi zmdi-save"></i> Save
-            </button>
-            <a href="/ReservationBo/Index" class="btn btn-danger btn-sm">
-                <i class="fa fa-arrow-left"></i> Cancel
-            </a>
-        </div>
+    </div>
+
+    <div class="card-footer text-end">
+        <button id="saveButton" class="btn btn-success">
+            <i class="zmdi zmdi-save"></i> Save
+        </button>
+        <a href="/ReservationBo/Index" class="btn btn-secondary">
+            <i class="fa fa-arrow-left"></i> Cancel
+        </a>
     </div>
 </div>
+
 
 <script>
     document.getElementById("saveButton").addEventListener("click", async function (event) {
@@ -120,8 +116,6 @@
             updatedAt: new Date().toISOString()
         };
 
-        console.log("Updating reservation:", reservationUpdate);
-
         try {
             const response = await fetch(`http://localhost:5259/api/reservations/${@Model.ReservationView?.ReservationId}`, {
                 method: "PUT",
@@ -131,6 +125,41 @@
                 body: JSON.stringify(reservationUpdate)
             });
 
+            const vehicleResponse = await fetch('http://localhost:5259/api/vehicles/@Model.ReservationView?.VehicleId');
+
+            if (vehicleResponse.ok) {
+                let vehicle = await vehicleResponse.json();
+
+                console.log(vehicle, 'dfd');
+
+                const vehicleToUpdate = {
+                    id: vehicle.id,
+                    model: vehicle.model,
+                    make: vehicle.make,
+                    year: vehicle.year,
+                    availability: document.getElementById("availability").value === "true",
+                    price: vehicle.price,
+                    createdAt: vehicle.createdAt,
+                    updatedAt: vehicle.updatedAt,
+                    typeId: vehicle.typeId,
+                    image: vehicle.image
+                };
+
+                console.log(JSON.stringify(vehicleToUpdate), 'ao')
+                
+                const updateResponse = await fetch(`http://localhost:5259/api/vehicles/${vehicleToUpdate.id}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(vehicleToUpdate)
+                });
+                
+                if (updateResponse.ok) {
+                    
+                }
+            }
+            
             if (response.ok) {
                 alert("Reservation updated successfully!");
                 window.location.href = "/ReservationBo/Index";

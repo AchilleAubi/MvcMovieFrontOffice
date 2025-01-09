@@ -9,7 +9,7 @@ using MvcMovieFrontOffice.Services;
 namespace MvcMovieFrontOffice.Controllers;
 
 [Authorize]
-public class ReservationController(ReservationService reservationService, VehicleService vehicleService, InvoiceService invoiceService) : Controller
+public class ReservationController(ReservationService reservationService, VehicleService vehicleService, InvoiceService invoiceService, PaymentService paymentService, WalletService walletService) : Controller
 {
     public async Task<IActionResult> Index()
     {
@@ -70,7 +70,32 @@ public class ReservationController(ReservationService reservationService, Vehicl
             reservationViewModel.VehicleView = vehicle;
             // return View(reservationViewModel);
         }
-        await reservationService.CreateReservationAsync(reservationViewModel.Reservation);
+        
+        var userId = reservationViewModel.Reservation.UserId;
+        var wallet = await walletService.GetWalletByIdAsync(userId);
+        
+        if (wallet.Amount < reservationViewModel.Reservation.Amount)
+        {
+            ViewBag.ErrorMessage = "Insufficient balance to make this payment.";
+            return View(reservationViewModel);
+        }
+        
+        var reservationId = await reservationService.CreateReservationAsync(reservationViewModel.Reservation);
+
+        var payment = new Payment
+        {
+            ReservationId = reservationId,
+            PaymentDate = DateTime.Now,
+            Amount = reservationViewModel.Reservation.Amount,
+            PaymentMethod = "Credit Card",
+            UserId = reservationViewModel.Reservation.UserId
+        };
+        
+        await paymentService.CreatePaymentAsync(payment);
+        
+        wallet.Amount -= reservationViewModel.Reservation.Amount;
+        await walletService.UpdateWalletAsync(wallet);
+        
         var invoiceService = new InvoiceService();
         var document = invoiceService.GetInvoicePdf(reservationViewModel.Reservation);
         
@@ -105,7 +130,7 @@ public class ReservationController(ReservationService reservationService, Vehicl
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,VehicleId,UserId,StartDate,EndDate,Status,TotalPrice,CreatedAt,UpdatedAt")] Reservation reservation)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,VehicleId,UserId,StartDate,EndDate,Status,TotalPrice,CreatedAt,UpdatedAt,Amount", "PaymentAmount")] Reservation reservation, int? PaymentAmount)
     {
         if (id != reservation.Id)
         {
@@ -116,6 +141,34 @@ public class ReservationController(ReservationService reservationService, Vehicl
         {
             try
             {
+                if (PaymentAmount.HasValue && PaymentAmount.Value > 0)
+                {
+                    var payment = new Payment
+                    {
+                        ReservationId = reservation.Id,
+                        PaymentDate = DateTime.Now,
+                        Amount = PaymentAmount.Value,
+                        PaymentMethod = "Credit Card",
+                        UserId = reservation.UserId
+                    };
+                    
+
+                    reservation.Amount += PaymentAmount.Value;
+                    
+                    var userId = reservation.UserId;
+                    var wallet = await walletService.GetWalletByIdAsync(userId);
+                    
+                    wallet.Amount -= PaymentAmount.Value;
+
+                    if (wallet.Amount < 0)
+                    {
+                        ViewBag.ErrorMessage = "Insufficient balance to make this payment.";
+                        return View(reservation);
+                    }
+
+                    await paymentService.CreatePaymentAsync(payment);
+                    await walletService.UpdateWalletAsync(wallet);
+                }
                 await reservationService.UpdateReservationAsync(reservation);
             }
             catch (DbUpdateConcurrencyException)
