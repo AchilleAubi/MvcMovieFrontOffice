@@ -9,30 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe2d39d-e915-415e-b128-bd198e9ad728" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/PaymentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/PaymentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/MvcMovieFrontOffice.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/MvcMovieFrontOffice.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/PaymentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/PaymentService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Payment/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Payment/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/dataSources/43f9cf46-c488-4d6f-8ccb-6b7fe763a268.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/dataSources/43f9cf46-c488-4d6f-8ccb-6b7fe763a268.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/dataSources/43f9cf46-c488-4d6f-8ccb-6b7fe763a268/storage_v2/_src_/database/mvcmovie.lm8jTA/schema/dbo.sYMBAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/dataSources/43f9cf46-c488-4d6f-8ccb-6b7fe763a268/storage_v2/_src_/database/mvcmovie.lm8jTA/schema/dbo.sYMBAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MvcMovieFrontOffice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Controllers/VehicleApiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Pages/VehicleBo/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Services/VehicleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/Views/Vehicle/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/bin/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/MvcMovieFrontOffice.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/ref/MvcMovieFrontOffice.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/Debug/net8.0/refint/MvcMovieFrontOffice.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/MvcMovieFrontOffice.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MvcMovieFrontOffice/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fanomezantsoa/RiderProjects/MvcMovieBackOffice/MvcMovieBackOffice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fanomezantsoa/Documents/00 M2 - MBDS - Major/Mr Naina&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -190,6 +183,12 @@
       <workItem from="1736281448759" duration="2480000" />
       <workItem from="1736352803868" duration="15895000" />
       <workItem from="1736407211224" duration="21657000" />
+      <workItem from="1736441066053" duration="1960000" />
+      <workItem from="1736499363764" duration="645000" />
+      <workItem from="1736511500405" duration="1252000" />
+      <workItem from="1736527829318" duration="1909000" />
+      <workItem from="1736570806722" duration="641000" />
+      <workItem from="1736883663688" duration="1000000" />
     </task>
     <servers />
   </component>

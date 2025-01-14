@@ -106,4 +106,17 @@ public class VehicleApiController(VehicleService vehicleService) : Controller
         var vehiclesType = await _vehicleService.GetVehicleTypesWithIdsAsync();
         return Json(vehiclesType);
     }
+    
+    [HttpPost]
+    [Route("api/vehicles/types")]
+    public async Task<ActionResult> CreateType([FromBody] VehicleType vehicleType)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        await vehicleService.CreateVehicleTypesAsync(vehicleType);
+        return CreatedAtAction(nameof(GetVehicleTypesApi), new { id = vehicleType.Id }, vehicleType);
+    }
 }

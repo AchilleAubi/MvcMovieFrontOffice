@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Users> signInManager;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +29,11 @@
             <nav class="navbar-cust">
                 <a asp-area="" asp-controller="Vehicle" asp-action="Index">Home</a>
                 <a asp-area="" asp-controller="Reservation" asp-action="Index">Reservation</a>
-                <a asp-area="" asp-controller="Payment" asp-action="Index">Payment</a>
-                <a asp-area="" asp-controller="Wallet" asp-action="Index">Wallet</a>
+                @if (signInManager.IsSignedIn(User))
+                {   
+                    <a asp-area="" asp-controller="Payment" asp-action="Index">Payment</a> 
+                    <a asp-area="" asp-controller="Wallet" asp-action="Index">Wallet</a>
+                }
                 @if (User.IsInRole("Admin"))
                 {
                     <a asp-page="/Admin/Index">Admin</a>

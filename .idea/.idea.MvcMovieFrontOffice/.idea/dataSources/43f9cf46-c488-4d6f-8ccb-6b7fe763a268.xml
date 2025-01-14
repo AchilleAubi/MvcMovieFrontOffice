@@ -16577,449 +16577,460 @@
       <PermissionsCheckSum>3196235284</PermissionsCheckSum>
       <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
     </database>
-    <database id="5514" parent="1" name="tempdb">
+    <database id="5514" parent="1" name="princy">
+      <ObjectId>6</ObjectId>
+      <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
+    </database>
+    <database id="5515" parent="1" name="tempdb">
       <ObjectId>2</ObjectId>
       <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
     </database>
-    <linked-server id="5515" parent="1" name="fanomezantsoa-Inspiron-16-5620">
+    <linked-server id="5516" parent="1" name="fanomezantsoa-Inspiron-16-5620">
       <DataSource>fanomezantsoa-Inspiron-16-5620</DataSource>
       <Product>SQL Server</Product>
       <ProviderName>SQLNCLI</ProviderName>
     </linked-server>
-    <login id="5516" parent="1" name="sa">
+    <login id="5517" parent="1" name="sa">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>1</ObjectId>
     </login>
-    <login id="5517" parent="1" name="public">
+    <login id="5518" parent="1" name="public">
       <Enabled>1</Enabled>
       <ObjectId>2</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5518" parent="1" name="sysadmin">
+    <login id="5519" parent="1" name="sysadmin">
       <Enabled>1</Enabled>
       <ObjectId>3</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5519" parent="1" name="securityadmin">
+    <login id="5520" parent="1" name="securityadmin">
       <Enabled>1</Enabled>
       <ObjectId>4</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5520" parent="1" name="serveradmin">
+    <login id="5521" parent="1" name="serveradmin">
       <Enabled>1</Enabled>
       <ObjectId>5</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5521" parent="1" name="setupadmin">
+    <login id="5522" parent="1" name="setupadmin">
       <Enabled>1</Enabled>
       <ObjectId>6</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5522" parent="1" name="processadmin">
+    <login id="5523" parent="1" name="processadmin">
       <Enabled>1</Enabled>
       <ObjectId>7</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5523" parent="1" name="diskadmin">
+    <login id="5524" parent="1" name="diskadmin">
       <Enabled>1</Enabled>
       <ObjectId>8</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5524" parent="1" name="dbcreator">
+    <login id="5525" parent="1" name="dbcreator">
       <Enabled>1</Enabled>
       <ObjectId>9</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5525" parent="1" name="bulkadmin">
+    <login id="5526" parent="1" name="bulkadmin">
       <Enabled>1</Enabled>
       <ObjectId>10</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5526" parent="1" name="##MS_ServerStateReader##">
+    <login id="5527" parent="1" name="##MS_ServerStateReader##">
       <Enabled>1</Enabled>
       <ObjectId>11</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5527" parent="1" name="##MS_ServerStateManager##">
+    <login id="5528" parent="1" name="##MS_ServerStateManager##">
       <Enabled>1</Enabled>
       <ObjectId>12</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5528" parent="1" name="##MS_DefinitionReader##">
+    <login id="5529" parent="1" name="##MS_DefinitionReader##">
       <Enabled>1</Enabled>
       <ObjectId>13</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5529" parent="1" name="##MS_DatabaseConnector##">
+    <login id="5530" parent="1" name="##MS_DatabaseConnector##">
       <Enabled>1</Enabled>
       <ObjectId>14</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5530" parent="1" name="##MS_DatabaseManager##">
+    <login id="5531" parent="1" name="##MS_DatabaseManager##">
       <Enabled>1</Enabled>
       <ObjectId>15</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5531" parent="1" name="##MS_LoginManager##">
+    <login id="5532" parent="1" name="##MS_LoginManager##">
       <Enabled>1</Enabled>
       <ObjectId>16</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5532" parent="1" name="##MS_SecurityDefinitionReader##">
+    <login id="5533" parent="1" name="##MS_SecurityDefinitionReader##">
       <Enabled>1</Enabled>
       <ObjectId>17</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5533" parent="1" name="##MS_PerformanceDefinitionReader##">
+    <login id="5534" parent="1" name="##MS_PerformanceDefinitionReader##">
       <Enabled>1</Enabled>
       <ObjectId>18</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5534" parent="1" name="##MS_ServerSecurityStateReader##">
+    <login id="5535" parent="1" name="##MS_ServerSecurityStateReader##">
       <Enabled>1</Enabled>
       <ObjectId>19</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5535" parent="1" name="##MS_ServerPerformanceStateReader##">
+    <login id="5536" parent="1" name="##MS_ServerPerformanceStateReader##">
       <Enabled>1</Enabled>
       <ObjectId>20</ObjectId>
       <Type>server-role</Type>
     </login>
-    <login id="5536" parent="1" name="##MS_SQLResourceSigningCertificate##">
+    <login id="5537" parent="1" name="##MS_SQLResourceSigningCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>101</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5537" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+    <login id="5538" parent="1" name="##MS_SQLReplicationSigningCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>102</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5538" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+    <login id="5539" parent="1" name="##MS_SQLAuthenticatorCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>103</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5539" parent="1" name="##MS_PolicySigningCertificate##">
+    <login id="5540" parent="1" name="##MS_PolicySigningCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>105</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5540" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+    <login id="5541" parent="1" name="##MS_SmoExtendedSigningCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>106</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5541" parent="1" name="##MS_PolicyEventProcessingLogin##">
+    <login id="5542" parent="1" name="##MS_PolicyEventProcessingLogin##">
       <DefaultDatabase>master</DefaultDatabase>
       <ObjectId>256</ObjectId>
     </login>
-    <login id="5542" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+    <login id="5543" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
       <DefaultDatabase>master</DefaultDatabase>
       <ObjectId>257</ObjectId>
     </login>
-    <login id="5543" parent="1" name="##MS_AgentSigningCertificate##">
+    <login id="5544" parent="1" name="##MS_AgentSigningCertificate##">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>258</ObjectId>
       <Type>certificate-mapped-login</Type>
     </login>
-    <login id="5544" parent="1" name="BUILTIN\Administrators">
+    <login id="5545" parent="1" name="BUILTIN\Administrators">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>259</ObjectId>
       <Type>windows-group</Type>
     </login>
-    <login id="5545" parent="1" name="NT AUTHORITY\SYSTEM">
+    <login id="5546" parent="1" name="NT AUTHORITY\SYSTEM">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>260</ObjectId>
       <Type>windows-login</Type>
     </login>
-    <login id="5546" parent="1" name="NT AUTHORITY\NETWORK SERVICE">
+    <login id="5547" parent="1" name="NT AUTHORITY\NETWORK SERVICE">
       <DefaultDatabase>master</DefaultDatabase>
       <Enabled>1</Enabled>
       <ObjectId>261</ObjectId>
       <Type>windows-login</Type>
     </login>
-    <assembly id="5547" parent="5513" name="Microsoft.SqlServer.Types">
+    <assembly id="5548" parent="5513" name="Microsoft.SqlServer.Types">
       <ObjectId>1</ObjectId>
       <Visible>1</Visible>
     </assembly>
-    <filegroup id="5548" parent="5513" name="PRIMARY">
+    <filegroup id="5549" parent="5513" name="PRIMARY">
       <DefaultGroup>1</DefaultGroup>
       <ObjectId>1</ObjectId>
     </filegroup>
-    <role id="5549" parent="5513" name="public">
+    <role id="5550" parent="5513" name="INFORMATION_SCHEMA">
+      <AuthType>none</AuthType>
+      <ObjectId>3</ObjectId>
+    </role>
+    <role id="5551" parent="5513" name="db_accessadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16385</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5552" parent="5513" name="db_backupoperator">
+      <AuthType>none</AuthType>
+      <ObjectId>16389</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5553" parent="5513" name="db_datareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16390</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5554" parent="5513" name="db_datawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16391</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5555" parent="5513" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5556" parent="5513" name="db_denydatareader">
+      <AuthType>none</AuthType>
+      <ObjectId>16392</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5557" parent="5513" name="db_denydatawriter">
+      <AuthType>none</AuthType>
+      <ObjectId>16393</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5558" parent="5513" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5559" parent="5513" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5560" parent="5513" name="dbo">
+      <AuthType>instance</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+    </role>
+    <role id="5561" parent="5513" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="5562" parent="5513" name="public">
       <AuthType>none</AuthType>
       <ObjectId>0</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5550" parent="5513" name="dbo">
-      <AuthType>instance</AuthType>
-      <DefaultSchema>dbo</DefaultSchema>
-      <ObjectId>1</ObjectId>
-    </role>
-    <role id="5551" parent="5513" name="guest">
-      <AuthType>none</AuthType>
-      <DefaultSchema>guest</DefaultSchema>
-      <ObjectId>2</ObjectId>
-    </role>
-    <role id="5552" parent="5513" name="INFORMATION_SCHEMA">
-      <AuthType>none</AuthType>
-      <ObjectId>3</ObjectId>
-    </role>
-    <role id="5553" parent="5513" name="sys">
+    <role id="5563" parent="5513" name="sys">
       <AuthType>none</AuthType>
       <ObjectId>4</ObjectId>
     </role>
-    <role id="5554" parent="5513" name="db_owner">
-      <AuthType>none</AuthType>
-      <ObjectId>16384</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5555" parent="5513" name="db_accessadmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16385</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5556" parent="5513" name="db_securityadmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16386</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5557" parent="5513" name="db_ddladmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16387</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5558" parent="5513" name="db_backupoperator">
-      <AuthType>none</AuthType>
-      <ObjectId>16389</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5559" parent="5513" name="db_datareader">
-      <AuthType>none</AuthType>
-      <ObjectId>16390</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5560" parent="5513" name="db_datawriter">
-      <AuthType>none</AuthType>
-      <ObjectId>16391</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5561" parent="5513" name="db_denydatareader">
-      <AuthType>none</AuthType>
-      <ObjectId>16392</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5562" parent="5513" name="db_denydatawriter">
-      <AuthType>none</AuthType>
-      <ObjectId>16393</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <schema id="5563" parent="5513" name="INFORMATION_SCHEMA">
+    <schema id="5564" parent="5513" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="5564" parent="5513" name="db_accessadmin">
+    <schema id="5565" parent="5513" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="5565" parent="5513" name="db_backupoperator">
+    <schema id="5566" parent="5513" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="5566" parent="5513" name="db_datareader">
+    <schema id="5567" parent="5513" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="5567" parent="5513" name="db_datawriter">
+    <schema id="5568" parent="5513" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="5568" parent="5513" name="db_ddladmin">
+    <schema id="5569" parent="5513" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="5569" parent="5513" name="db_denydatareader">
+    <schema id="5570" parent="5513" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="5570" parent="5513" name="db_denydatawriter">
+    <schema id="5571" parent="5513" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <schema id="5571" parent="5513" name="db_owner">
+    <schema id="5572" parent="5513" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="5572" parent="5513" name="db_securityadmin">
+    <schema id="5573" parent="5513" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="5573" parent="5513" name="dbo">
+    <schema id="5574" parent="5513" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2025-01-06.20:55:54.560</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2025-01-06.18:55:54</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2025-01-10.10:59:22.430</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-01-10.08:59:22</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
-    <schema id="5574" parent="5513" name="guest">
+    <schema id="5575" parent="5513" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="5575" parent="5513" name="sys">
+    <schema id="5576" parent="5513" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <table id="5576" parent="5573" name="AspNetRoleClaims">
+    <table id="5577" parent="5574" name="AspNetRoleClaims">
       <CreatedTimestamp>2024-12-19.09:09:06.647</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.663</ModifiedTimestamp>
       <ObjectId>1394104007</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5577" parent="5573" name="AspNetRoles">
+    <table id="5578" parent="5574" name="AspNetRoles">
       <CreatedTimestamp>2024-12-19.09:09:06.637</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.667</ModifiedTimestamp>
       <ObjectId>1330103779</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5578" parent="5573" name="AspNetUserClaims">
+    <table id="5579" parent="5574" name="AspNetUserClaims">
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.667</ModifiedTimestamp>
       <ObjectId>1442104178</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5579" parent="5573" name="AspNetUserLogins">
+    <table id="5580" parent="5574" name="AspNetUserLogins">
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.667</ModifiedTimestamp>
       <ObjectId>1490104349</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5580" parent="5573" name="AspNetUserRoles">
+    <table id="5581" parent="5574" name="AspNetUserRoles">
       <CreatedTimestamp>2024-12-19.09:09:06.657</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.667</ModifiedTimestamp>
       <ObjectId>1538104520</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5581" parent="5573" name="AspNetUserTokens">
+    <table id="5582" parent="5574" name="AspNetUserTokens">
       <CreatedTimestamp>2024-12-19.09:09:06.660</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.09:09:06.660</ModifiedTimestamp>
       <ObjectId>1602104748</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5582" parent="5573" name="AspNetUsers">
+    <table id="5583" parent="5574" name="AspNetUsers">
       <CreatedTimestamp>2024-12-19.09:09:06.647</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-12-19.13:23:09.520</ModifiedTimestamp>
+      <ModifiedTimestamp>2025-01-08.22:19:08.780</ModifiedTimestamp>
       <ObjectId>1362103893</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5583" parent="5573" name="__EFMigrationsHistory">
+    <table id="5584" parent="5574" name="__EFMigrationsHistory">
       <CreatedTimestamp>2024-12-16.15:44:27.933</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-16.15:44:27.933</ModifiedTimestamp>
       <ObjectId>18099105</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5584" parent="5573" name="invoices">
+    <table id="5585" parent="5574" name="invoices">
       <CreatedTimestamp>2024-12-14.18:05:00.733</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-18.19:51:04.483</ModifiedTimestamp>
       <ObjectId>1205579333</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5585" parent="5573" name="notifications">
+    <table id="5586" parent="5574" name="notifications">
       <CreatedTimestamp>2024-12-18.19:50:32.163</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.13:23:09.520</ModifiedTimestamp>
       <ObjectId>1042102753</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5586" parent="5573" name="payments">
-      <CreatedTimestamp>2024-12-14.18:05:00.747</CreatedTimestamp>
+    <table id="5587" parent="5574" name="payments">
+      <CreatedTimestamp>2025-01-08.19:52:04.360</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-12-18.19:51:04.487</ModifiedTimestamp>
-      <ObjectId>1349579846</ObjectId>
+      <ModifiedTimestamp>2025-01-08.21:20:43.630</ModifiedTimestamp>
+      <ObjectId>814625945</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5587" parent="5573" name="reports">
+    <table id="5588" parent="5574" name="reports">
       <CreatedTimestamp>2024-12-14.18:05:00.750</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2025-01-02.00:06:46.110</ModifiedTimestamp>
       <ObjectId>1413580074</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5588" parent="5573" name="reservations">
+    <table id="5589" parent="5574" name="reservations">
       <CreatedTimestamp>2024-12-18.19:51:04.440</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2025-01-02.08:45:17.583</ModifiedTimestamp>
+      <ModifiedTimestamp>2025-01-08.23:53:08.457</ModifiedTimestamp>
       <ObjectId>1138103095</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5589" parent="5573" name="vehicleImages">
+    <table id="5590" parent="5574" name="vehicleImages">
       <CreatedTimestamp>2024-12-14.18:05:00.740</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2025-01-01.15:09:07.577</ModifiedTimestamp>
       <ObjectId>1301579675</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <table id="5590" parent="5573" name="vehicleTypes">
+    <table id="5591" parent="5574" name="vehicleTypes">
       <CreatedTimestamp>2024-12-14.18:05:00.737</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2024-12-19.23:10:53.643</ModifiedTimestamp>
       <ObjectId>1269579561</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5591" parent="5573" name="vehicles">
+    <table id="5592" parent="5574" name="vehicles">
       <CreatedTimestamp>2024-12-18.12:27:51.693</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ModifiedTimestamp>2025-01-02.08:43:48.363</ModifiedTimestamp>
       <ObjectId>434100587</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
-    <view id="5592" parent="5573" name="ReservationView">
-      <CreatedTimestamp>2025-01-01.22:19:16.147</CreatedTimestamp>
-      <ModifiedTimestamp>2025-01-01.22:19:16.147</ModifiedTimestamp>
-      <ObjectId>206623779</ObjectId>
-      <SourceTextLength>441</SourceTextLength>
+    <table id="5593" parent="5574" name="wallet">
+      <CreatedTimestamp>2025-01-08.22:18:45.210</CreatedTimestamp>
+      <DataRetentionPeriod>-1</DataRetentionPeriod>
+      <ModifiedTimestamp>2025-01-08.22:19:08.780</ModifiedTimestamp>
+      <ObjectId>910626287</ObjectId>
+      <LobDataSpaceId>0</LobDataSpaceId>
+    </table>
+    <view id="5594" parent="5574" name="ReservationView">
+      <CreatedTimestamp>2025-01-09.12:57:29.380</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-09.12:57:29.380</ModifiedTimestamp>
+      <ObjectId>1070626857</ObjectId>
+      <SourceTextLength>470</SourceTextLength>
     </view>
-    <view id="5593" parent="5573" name="VehicleView">
+    <view id="5595" parent="5574" name="VehicleView">
       <CreatedTimestamp>2025-01-06.20:23:07.237</CreatedTimestamp>
       <ModifiedTimestamp>2025-01-06.20:23:07.237</ModifiedTimestamp>
       <ObjectId>446624634</ObjectId>
       <SourceTextLength>370</SourceTextLength>
     </view>
-    <column id="5594" parent="5576" name="Id">
+    <column id="5596" parent="5577" name="Id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5595" parent="5576" name="RoleId">
+    <column id="5597" parent="5577" name="RoleId">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5596" parent="5576" name="ClaimType">
+    <column id="5598" parent="5577" name="ClaimType">
       <Position>3</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5597" parent="5576" name="ClaimValue">
+    <column id="5599" parent="5577" name="ClaimValue">
       <Position>4</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <foreign-key id="5598" parent="5576" name="FK_AspNetRoleClaims_AspNetRoles_RoleId">
+    <foreign-key id="5600" parent="5577" name="FK_AspNetRoleClaims_AspNetRoles_RoleId">
       <ColNames>RoleId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.650</ModifiedTimestamp>
@@ -17029,83 +17040,83 @@
       <RefTableId>1330103779</RefTableId>
       <RefTableName>AspNetRoles</RefTableName>
     </foreign-key>
-    <index id="5599" parent="5576" name="PK_AspNetRoleClaims">
+    <index id="5601" parent="5577" name="PK_AspNetRoleClaims">
       <Clustering>1</Clustering>
       <ColNames>Id</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5600" parent="5576" name="IX_AspNetRoleClaims_RoleId">
+    <index id="5602" parent="5577" name="IX_AspNetRoleClaims_RoleId">
       <ColNames>RoleId</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5601" parent="5576" name="PK_AspNetRoleClaims">
+    <key id="5603" parent="5577" name="PK_AspNetRoleClaims">
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.650</ModifiedTimestamp>
       <ObjectId>1410104064</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetRoleClaims</UnderlyingIndexName>
     </key>
-    <column id="5602" parent="5577" name="Id">
+    <column id="5604" parent="5578" name="Id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5603" parent="5577" name="Name">
+    <column id="5605" parent="5578" name="Name">
       <Position>2</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5604" parent="5577" name="NormalizedName">
+    <column id="5606" parent="5578" name="NormalizedName">
       <Position>3</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5605" parent="5577" name="ConcurrencyStamp">
+    <column id="5607" parent="5578" name="ConcurrencyStamp">
       <Position>4</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <index id="5606" parent="5577" name="PK_AspNetRoles">
+    <index id="5608" parent="5578" name="PK_AspNetRoles">
       <Clustering>1</Clustering>
       <ColNames>Id</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5607" parent="5577" name="RoleNameIndex">
+    <index id="5609" parent="5578" name="RoleNameIndex">
       <ColNames>NormalizedName</ColNames>
       <Condition>[NormalizedName] IS NOT NULL</Condition>
       <Position>2</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5608" parent="5577" name="PK_AspNetRoles">
+    <key id="5610" parent="5578" name="PK_AspNetRoles">
       <CreatedTimestamp>2024-12-19.09:09:06.643</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.643</ModifiedTimestamp>
       <ObjectId>1346103836</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetRoles</UnderlyingIndexName>
     </key>
-    <column id="5609" parent="5578" name="Id">
+    <column id="5611" parent="5579" name="Id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5610" parent="5578" name="UserId">
+    <column id="5612" parent="5579" name="UserId">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5611" parent="5578" name="ClaimType">
+    <column id="5613" parent="5579" name="ClaimType">
       <Position>3</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5612" parent="5578" name="ClaimValue">
+    <column id="5614" parent="5579" name="ClaimValue">
       <Position>4</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <foreign-key id="5613" parent="5578" name="FK_AspNetUserClaims_AspNetUsers_UserId">
+    <foreign-key id="5615" parent="5579" name="FK_AspNetUserClaims_AspNetUsers_UserId">
       <ColNames>UserId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.650</ModifiedTimestamp>
@@ -17115,45 +17126,45 @@
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <index id="5614" parent="5578" name="PK_AspNetUserClaims">
+    <index id="5616" parent="5579" name="PK_AspNetUserClaims">
       <Clustering>1</Clustering>
       <ColNames>Id</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5615" parent="5578" name="IX_AspNetUserClaims_UserId">
+    <index id="5617" parent="5579" name="IX_AspNetUserClaims_UserId">
       <ColNames>UserId</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5616" parent="5578" name="PK_AspNetUserClaims">
+    <key id="5618" parent="5579" name="PK_AspNetUserClaims">
       <CreatedTimestamp>2024-12-19.09:09:06.650</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.650</ModifiedTimestamp>
       <ObjectId>1458104235</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUserClaims</UnderlyingIndexName>
     </key>
-    <column id="5617" parent="5579" name="LoginProvider">
+    <column id="5619" parent="5580" name="LoginProvider">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5618" parent="5579" name="ProviderKey">
+    <column id="5620" parent="5580" name="ProviderKey">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5619" parent="5579" name="ProviderDisplayName">
+    <column id="5621" parent="5580" name="ProviderDisplayName">
       <Position>3</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5620" parent="5579" name="UserId">
+    <column id="5622" parent="5580" name="UserId">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <foreign-key id="5621" parent="5579" name="FK_AspNetUserLogins_AspNetUsers_UserId">
+    <foreign-key id="5623" parent="5580" name="FK_AspNetUserLogins_AspNetUsers_UserId">
       <ColNames>UserId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.657</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.657</ModifiedTimestamp>
@@ -17163,7 +17174,7 @@
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <index id="5622" parent="5579" name="PK_AspNetUserLogins">
+    <index id="5624" parent="5580" name="PK_AspNetUserLogins">
       <Clustering>1</Clustering>
       <ColNames>LoginProvider
 ProviderKey</ColNames>
@@ -17171,29 +17182,29 @@ ProviderKey</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5623" parent="5579" name="IX_AspNetUserLogins_UserId">
+    <index id="5625" parent="5580" name="IX_AspNetUserLogins_UserId">
       <ColNames>UserId</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5624" parent="5579" name="PK_AspNetUserLogins">
+    <key id="5626" parent="5580" name="PK_AspNetUserLogins">
       <CreatedTimestamp>2024-12-19.09:09:06.653</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.653</ModifiedTimestamp>
       <ObjectId>1506104406</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUserLogins</UnderlyingIndexName>
     </key>
-    <column id="5625" parent="5580" name="UserId">
+    <column id="5627" parent="5581" name="UserId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5626" parent="5580" name="RoleId">
+    <column id="5628" parent="5581" name="RoleId">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <foreign-key id="5627" parent="5580" name="FK_AspNetUserRoles_AspNetUsers_UserId">
+    <foreign-key id="5629" parent="5581" name="FK_AspNetUserRoles_AspNetUsers_UserId">
       <ColNames>UserId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.660</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.660</ModifiedTimestamp>
@@ -17203,7 +17214,7 @@ ProviderKey</ColNames>
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <foreign-key id="5628" parent="5580" name="FK_AspNetUserRoles_AspNetRoles_RoleId">
+    <foreign-key id="5630" parent="5581" name="FK_AspNetUserRoles_AspNetRoles_RoleId">
       <ColNames>RoleId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.660</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.660</ModifiedTimestamp>
@@ -17213,7 +17224,7 @@ ProviderKey</ColNames>
       <RefTableId>1330103779</RefTableId>
       <RefTableName>AspNetRoles</RefTableName>
     </foreign-key>
-    <index id="5629" parent="5580" name="PK_AspNetUserRoles">
+    <index id="5631" parent="5581" name="PK_AspNetUserRoles">
       <Clustering>1</Clustering>
       <ColNames>UserId
 RoleId</ColNames>
@@ -17221,38 +17232,38 @@ RoleId</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5630" parent="5580" name="IX_AspNetUserRoles_RoleId">
+    <index id="5632" parent="5581" name="IX_AspNetUserRoles_RoleId">
       <ColNames>RoleId</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5631" parent="5580" name="PK_AspNetUserRoles">
+    <key id="5633" parent="5581" name="PK_AspNetUserRoles">
       <CreatedTimestamp>2024-12-19.09:09:06.657</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.657</ModifiedTimestamp>
       <ObjectId>1554104577</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUserRoles</UnderlyingIndexName>
     </key>
-    <column id="5632" parent="5581" name="UserId">
+    <column id="5634" parent="5582" name="UserId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5633" parent="5581" name="LoginProvider">
+    <column id="5635" parent="5582" name="LoginProvider">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5634" parent="5581" name="Name">
+    <column id="5636" parent="5582" name="Name">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5635" parent="5581" name="Value">
+    <column id="5637" parent="5582" name="Value">
       <Position>4</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <foreign-key id="5636" parent="5581" name="FK_AspNetUserTokens_AspNetUsers_UserId">
+    <foreign-key id="5638" parent="5582" name="FK_AspNetUserTokens_AspNetUsers_UserId">
       <ColNames>UserId</ColNames>
       <CreatedTimestamp>2024-12-19.09:09:06.660</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.660</ModifiedTimestamp>
@@ -17262,7 +17273,7 @@ RoleId</ColNames>
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <index id="5637" parent="5581" name="PK_AspNetUserTokens">
+    <index id="5639" parent="5582" name="PK_AspNetUserTokens">
       <Clustering>1</Clustering>
       <ColNames>UserId
 LoginProvider
@@ -17271,168 +17282,168 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5638" parent="5581" name="PK_AspNetUserTokens">
+    <key id="5640" parent="5582" name="PK_AspNetUserTokens">
       <CreatedTimestamp>2024-12-19.09:09:06.660</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.660</ModifiedTimestamp>
       <ObjectId>1618104805</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUserTokens</UnderlyingIndexName>
     </key>
-    <column id="5639" parent="5582" name="Id">
+    <column id="5641" parent="5583" name="Id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <column id="5640" parent="5582" name="FullName">
+    <column id="5642" parent="5583" name="FullName">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5641" parent="5582" name="UserName">
+    <column id="5643" parent="5583" name="UserName">
       <Position>3</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5642" parent="5582" name="NormalizedUserName">
+    <column id="5644" parent="5583" name="NormalizedUserName">
       <Position>4</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5643" parent="5582" name="Email">
+    <column id="5645" parent="5583" name="Email">
       <Position>5</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5644" parent="5582" name="NormalizedEmail">
+    <column id="5646" parent="5583" name="NormalizedEmail">
       <Position>6</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5645" parent="5582" name="EmailConfirmed">
+    <column id="5647" parent="5583" name="EmailConfirmed">
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5646" parent="5582" name="PasswordHash">
+    <column id="5648" parent="5583" name="PasswordHash">
       <Position>8</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5647" parent="5582" name="SecurityStamp">
+    <column id="5649" parent="5583" name="SecurityStamp">
       <Position>9</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5648" parent="5582" name="ConcurrencyStamp">
+    <column id="5650" parent="5583" name="ConcurrencyStamp">
       <Position>10</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5649" parent="5582" name="PhoneNumber">
+    <column id="5651" parent="5583" name="PhoneNumber">
       <Position>11</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5650" parent="5582" name="PhoneNumberConfirmed">
+    <column id="5652" parent="5583" name="PhoneNumberConfirmed">
       <NotNull>1</NotNull>
       <Position>12</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5651" parent="5582" name="TwoFactorEnabled">
+    <column id="5653" parent="5583" name="TwoFactorEnabled">
       <NotNull>1</NotNull>
       <Position>13</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5652" parent="5582" name="LockoutEnd">
+    <column id="5654" parent="5583" name="LockoutEnd">
       <Position>14</Position>
       <StoredType>datetimeoffset|0s</StoredType>
     </column>
-    <column id="5653" parent="5582" name="LockoutEnabled">
+    <column id="5655" parent="5583" name="LockoutEnabled">
       <NotNull>1</NotNull>
       <Position>15</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5654" parent="5582" name="AccessFailedCount">
+    <column id="5656" parent="5583" name="AccessFailedCount">
       <NotNull>1</NotNull>
       <Position>16</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <index id="5655" parent="5582" name="PK_AspNetUsers">
+    <index id="5657" parent="5583" name="PK_AspNetUsers">
       <Clustering>1</Clustering>
       <ColNames>Id</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5656" parent="5582" name="EmailIndex">
+    <index id="5658" parent="5583" name="EmailIndex">
       <ColNames>NormalizedEmail</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5657" parent="5582" name="UserNameIndex">
+    <index id="5659" parent="5583" name="UserNameIndex">
       <ColNames>NormalizedUserName</ColNames>
       <Condition>[NormalizedUserName] IS NOT NULL</Condition>
       <Position>3</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5658" parent="5582" name="PK_AspNetUsers">
+    <key id="5660" parent="5583" name="PK_AspNetUsers">
       <CreatedTimestamp>2024-12-19.09:09:06.647</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.09:09:06.647</ModifiedTimestamp>
       <ObjectId>1378103950</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUsers</UnderlyingIndexName>
     </key>
-    <column id="5659" parent="5583" name="MigrationId">
+    <column id="5661" parent="5584" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(150 char)|0s</StoredType>
     </column>
-    <column id="5660" parent="5583" name="ProductVersion">
+    <column id="5662" parent="5584" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(32 char)|0s</StoredType>
     </column>
-    <index id="5661" parent="5583" name="PK___EFMigrationsHistory">
+    <index id="5663" parent="5584" name="PK___EFMigrationsHistory">
       <Clustering>1</Clustering>
       <ColNames>MigrationId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5662" parent="5583" name="PK___EFMigrationsHistory">
+    <key id="5664" parent="5584" name="PK___EFMigrationsHistory">
       <CreatedTimestamp>2024-12-16.15:44:27.937</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-16.15:44:27.937</ModifiedTimestamp>
       <ObjectId>34099162</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK___EFMigrationsHistory</UnderlyingIndexName>
     </key>
-    <column id="5663" parent="5584" name="id">
+    <column id="5665" parent="5585" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5664" parent="5584" name="reservation_id">
+    <column id="5666" parent="5585" name="reservation_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5665" parent="5584" name="amount">
+    <column id="5667" parent="5585" name="amount">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>decimal(10,2)|0s</StoredType>
     </column>
-    <column id="5666" parent="5584" name="issue_date">
+    <column id="5668" parent="5585" name="issue_date">
       <Position>4</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>1237579447</DefaultConstraintId>
       <DefaultConstraintName>DF__invoices__issue___49C3F6B7</DefaultConstraintName>
     </column>
-    <column id="5667" parent="5584" name="pdf_link">
+    <column id="5669" parent="5585" name="pdf_link">
       <Position>5</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <default id="5668" parent="5584" name="DF__invoices__issue___49C3F6B7">
+    <default id="5670" parent="5585" name="DF__invoices__issue___49C3F6B7">
       <ColNames>issue_date</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-14.18:05:00.733</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1237579447</ObjectId>
     </default>
-    <foreign-key id="5669" parent="5584" name="FK__invoices__reserv__489AC854">
+    <foreign-key id="5671" parent="5585" name="FK__invoices__reserv__489AC854">
       <ColNames>reservation_id</ColNames>
       <CreatedTimestamp>2024-12-18.19:51:04.443</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.483</ModifiedTimestamp>
@@ -17442,7 +17453,7 @@ Name</ColNames>
       <RefTableId>1138103095</RefTableId>
       <RefTableName>reservations</RefTableName>
     </foreign-key>
-    <index id="5670" parent="5584" name="PK__invoices__3213E83FDB03B634">
+    <index id="5672" parent="5585" name="PK__invoices__3213E83FDB03B634">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17450,7 +17461,7 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5671" parent="5584" name="PK__invoices__3213E83FDB03B634">
+    <key id="5673" parent="5585" name="PK__invoices__3213E83FDB03B634">
       <CreatedTimestamp>2024-12-14.18:05:00.733</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-14.18:05:00.733</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17458,7 +17469,7 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__invoices__3213E83FDB03B634</UnderlyingIndexName>
     </key>
-    <check id="5672" parent="5585" name="CK__notificat__statu__42E1EEFE">
+    <check id="5674" parent="5586" name="CK__notificat__statu__42E1EEFE">
       <ColNames>status</ColNames>
       <CreatedTimestamp>2024-12-18.19:50:32.173</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:50:32.207</ModifiedTimestamp>
@@ -17466,48 +17477,48 @@ Name</ColNames>
       <ObjectId>1122103038</ObjectId>
       <Predicate>[status]=&apos;read&apos; OR [status]=&apos;sent&apos;</Predicate>
     </check>
-    <column id="5673" parent="5585" name="id">
+    <column id="5675" parent="5586" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5674" parent="5585" name="message">
+    <column id="5676" parent="5586" name="message">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>text|0s</StoredType>
     </column>
-    <column id="5675" parent="5585" name="status">
+    <column id="5677" parent="5586" name="status">
       <Position>4</Position>
       <StoredType>varchar(20 char)|0s</StoredType>
       <DefaultConstraintId>1074102867</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__statu__40058253</DefaultConstraintName>
     </column>
-    <column id="5676" parent="5585" name="sent_at">
+    <column id="5678" parent="5586" name="sent_at">
       <Position>5</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>1090102924</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__sent___40F9A68C</DefaultConstraintName>
     </column>
-    <column id="5677" parent="5585" name="user_id">
+    <column id="5679" parent="5586" name="user_id">
       <Position>6</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <default id="5678" parent="5585" name="DF__tmp_ms_xx__statu__40058253">
+    <default id="5680" parent="5586" name="DF__tmp_ms_xx__statu__40058253">
       <ColNames>status</ColNames>
       <DefaultExpression>&apos;sent&apos;</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.19:50:32.163</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1074102867</ObjectId>
     </default>
-    <default id="5679" parent="5585" name="DF__tmp_ms_xx__sent___40F9A68C">
+    <default id="5681" parent="5586" name="DF__tmp_ms_xx__sent___40F9A68C">
       <ColNames>sent_at</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.19:50:32.163</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1090102924</ObjectId>
     </default>
-    <foreign-key id="5680" parent="5585" name="FK_Notifications_Users">
+    <foreign-key id="5682" parent="5586" name="FK_Notifications_Users">
       <ColNames>user_id</ColNames>
       <CreatedTimestamp>2024-12-19.13:23:09.520</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.13:23:09.520</ModifiedTimestamp>
@@ -17516,7 +17527,7 @@ Name</ColNames>
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <index id="5681" parent="5585" name="PK__tmp_ms_x__3213E83FADA3637B">
+    <index id="5683" parent="5586" name="PK__tmp_ms_x__3213E83FADA3637B">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17524,7 +17535,7 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5682" parent="5585" name="PK__tmp_ms_x__3213E83FADA3637B">
+    <key id="5684" parent="5586" name="PK__tmp_ms_x__3213E83FADA3637B">
       <CreatedTimestamp>2024-12-18.19:50:32.163</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:50:32.163</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17532,51 +17543,65 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__tmp_ms_x__3213E83FADA3637B</UnderlyingIndexName>
     </key>
-    <column id="5683" parent="5586" name="id">
+    <column id="5685" parent="5587" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(14)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5684" parent="5586" name="reservation_id">
+    <column id="5686" parent="5587" name="reservationId">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5685" parent="5586" name="payment_date">
+    <column id="5687" parent="5587" name="paymentDate">
       <Position>3</Position>
       <StoredType>datetime|0s</StoredType>
-      <DefaultConstraintId>1381579960</DefaultConstraintId>
-      <DefaultConstraintName>DF__payments__paymen__52593CB8</DefaultConstraintName>
+      <DefaultConstraintId>846626059</DefaultConstraintId>
+      <DefaultConstraintName>DF__payments__paymen__32767D0B</DefaultConstraintName>
     </column>
-    <column id="5686" parent="5586" name="amount">
+    <column id="5688" parent="5587" name="amount">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StoredType>decimal(10,2)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5687" parent="5586" name="payment_method">
+    <column id="5689" parent="5587" name="paymentMethod">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <default id="5688" parent="5586" name="DF__payments__paymen__52593CB8">
-      <ColNames>payment_date</ColNames>
+    <column id="5690" parent="5587" name="userId">
+      <Position>6</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <default id="5691" parent="5587" name="DF__payments__paymen__32767D0B">
+      <ColNames>paymentDate</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
-      <ModifiedTimestamp>2024-12-14.18:05:00.747</ModifiedTimestamp>
+      <ModifiedTimestamp>2025-01-08.19:52:04.370</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1381579960</ObjectId>
+      <ObjectId>846626059</ObjectId>
     </default>
-    <foreign-key id="5689" parent="5586" name="FK__payments__reserv__498EEC8D">
-      <ColNames>reservation_id</ColNames>
-      <CreatedTimestamp>2024-12-18.19:51:04.447</CreatedTimestamp>
-      <ModifiedTimestamp>2024-12-18.19:51:04.487</ModifiedTimestamp>
+    <foreign-key id="5692" parent="5587" name="FK__payments__reserv__336AA144">
+      <ColNames>reservationId</ColNames>
+      <CreatedTimestamp>2025-01-08.19:52:04.377</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-08.19:52:04.377</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1234103437</ObjectId>
+      <ObjectId>862626116</ObjectId>
       <RefColNames>id</RefColNames>
       <RefTableId>1138103095</RefTableId>
       <RefTableName>reservations</RefTableName>
     </foreign-key>
-    <index id="5690" parent="5586" name="PK__payments__3213E83F980F8DCC">
+    <foreign-key id="5693" parent="5587" name="FK_Payments_Users">
+      <ColNames>userId</ColNames>
+      <CreatedTimestamp>2025-01-08.21:20:43.630</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-08.21:20:43.630</ModifiedTimestamp>
+      <ObjectId>894626230</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1362103893</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <index id="5694" parent="5587" name="PK__payments__3213E83FE7B53A8D">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17584,41 +17609,41 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5691" parent="5586" name="PK__payments__3213E83F980F8DCC">
-      <CreatedTimestamp>2024-12-14.18:05:00.747</CreatedTimestamp>
-      <ModifiedTimestamp>2024-12-14.18:05:00.747</ModifiedTimestamp>
+    <key id="5695" parent="5587" name="PK__payments__3213E83FE7B53A8D">
+      <CreatedTimestamp>2025-01-08.19:52:04.367</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-08.19:52:04.367</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1365579903</ObjectId>
+      <ObjectId>830626002</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__payments__3213E83F980F8DCC</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__payments__3213E83FE7B53A8D</UnderlyingIndexName>
     </key>
-    <column id="5692" parent="5587" name="id">
+    <column id="5696" parent="5588" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5693" parent="5587" name="start_date">
+    <column id="5697" parent="5588" name="start_date">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5694" parent="5587" name="end_date">
+    <column id="5698" parent="5588" name="end_date">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5695" parent="5587" name="total_revenue">
+    <column id="5699" parent="5588" name="total_revenue">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5696" parent="5587" name="avg_occupation">
+    <column id="5700" parent="5588" name="avg_occupation">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <index id="5697" parent="5587" name="PK__reports__3213E83F5AE821C7">
+    <index id="5701" parent="5588" name="PK__reports__3213E83F5AE821C7">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17626,7 +17651,7 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5698" parent="5587" name="PK__reports__3213E83F5AE821C7">
+    <key id="5702" parent="5588" name="PK__reports__3213E83F5AE821C7">
       <CreatedTimestamp>2024-12-14.18:05:00.750</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-14.18:05:00.750</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17634,7 +17659,7 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__reports__3213E83F5AE821C7</UnderlyingIndexName>
     </key>
-    <check id="5699" parent="5588" name="CK__reservati__statu__4D5F7D71">
+    <check id="5703" parent="5589" name="CK__reservati__statu__4D5F7D71">
       <ColNames>status</ColNames>
       <CreatedTimestamp>2024-12-18.19:51:04.457</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.497</ModifiedTimestamp>
@@ -17642,7 +17667,7 @@ Name</ColNames>
       <ObjectId>1298103665</ObjectId>
       <Predicate>[status]=&apos;canceled&apos; OR [status]=&apos;completed&apos; OR [status]=&apos;confirmed&apos; OR [status]=&apos;pending&apos;</Predicate>
     </check>
-    <check id="5700" parent="5588" name="CK__reservati__statu__4E53A1AA">
+    <check id="5704" parent="5589" name="CK__reservati__statu__4E53A1AA">
       <ColNames>status</ColNames>
       <CreatedTimestamp>2024-12-18.19:51:04.457</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.500</ModifiedTimestamp>
@@ -17650,76 +17675,90 @@ Name</ColNames>
       <ObjectId>1314103722</ObjectId>
       <Predicate>[status]=&apos;canceled&apos; OR [status]=&apos;completed&apos; OR [status]=&apos;confirmed&apos; OR [status]=&apos;pending&apos;</Predicate>
     </check>
-    <column id="5701" parent="5588" name="id">
+    <column id="5705" parent="5589" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(32)</SequenceIdentity>
+      <SequenceIdentity>1(42)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5702" parent="5588" name="vehicleId">
+    <column id="5706" parent="5589" name="vehicleId">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5703" parent="5588" name="startDate">
+    <column id="5707" parent="5589" name="startDate">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5704" parent="5588" name="endDate">
+    <column id="5708" parent="5589" name="endDate">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5705" parent="5588" name="status">
+    <column id="5709" parent="5589" name="status">
       <Position>6</Position>
       <StoredType>varchar(20 char)|0s</StoredType>
       <DefaultConstraintId>1170103209</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__statu__45BE5BA9</DefaultConstraintName>
     </column>
-    <column id="5706" parent="5588" name="totalPrice">
+    <column id="5710" parent="5589" name="totalPrice">
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5707" parent="5588" name="createdAt">
+    <column id="5711" parent="5589" name="createdAt">
       <Position>8</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>1186103266</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__creat__46B27FE2</DefaultConstraintName>
     </column>
-    <column id="5708" parent="5588" name="updatedAt">
+    <column id="5712" parent="5589" name="updatedAt">
       <Position>9</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>1202103323</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__updat__47A6A41B</DefaultConstraintName>
     </column>
-    <column id="5709" parent="5588" name="userId">
+    <column id="5713" parent="5589" name="userId">
       <Position>10</Position>
       <StoredType>nvarchar(450 char)|0s</StoredType>
     </column>
-    <default id="5710" parent="5588" name="DF__tmp_ms_xx__statu__45BE5BA9">
+    <column id="5714" parent="5589" name="amount">
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StoredType>int|0s</StoredType>
+      <DefaultConstraintId>958626458</DefaultConstraintId>
+      <DefaultConstraintName>DF__reservati__remai__39237A9A</DefaultConstraintName>
+    </column>
+    <default id="5715" parent="5589" name="DF__tmp_ms_xx__statu__45BE5BA9">
       <ColNames>status</ColNames>
       <DefaultExpression>&apos;pending&apos;</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.19:51:04.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1170103209</ObjectId>
     </default>
-    <default id="5711" parent="5588" name="DF__tmp_ms_xx__creat__46B27FE2">
+    <default id="5716" parent="5589" name="DF__tmp_ms_xx__creat__46B27FE2">
       <ColNames>createdAt</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.19:51:04.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1186103266</ObjectId>
     </default>
-    <default id="5712" parent="5588" name="DF__tmp_ms_xx__updat__47A6A41B">
+    <default id="5717" parent="5589" name="DF__tmp_ms_xx__updat__47A6A41B">
       <ColNames>updatedAt</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.19:51:04.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>1202103323</ObjectId>
     </default>
-    <foreign-key id="5713" parent="5588" name="FK__reservati__vehic__4A8310C6">
+    <default id="5718" parent="5589" name="DF__reservati__remai__39237A9A">
+      <ColNames>amount</ColNames>
+      <DefaultExpression>0</DefaultExpression>
+      <ModifiedTimestamp>2025-01-08.23:42:03.027</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>958626458</ObjectId>
+    </default>
+    <foreign-key id="5719" parent="5589" name="FK__reservati__vehic__4A8310C6">
       <ColNames>vehicleId</ColNames>
       <CreatedTimestamp>2024-12-18.19:51:04.450</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.490</ModifiedTimestamp>
@@ -17729,7 +17768,7 @@ Name</ColNames>
       <RefTableId>434100587</RefTableId>
       <RefTableName>vehicles</RefTableName>
     </foreign-key>
-    <foreign-key id="5714" parent="5588" name="FK__reservati__vehic__4B7734FF">
+    <foreign-key id="5720" parent="5589" name="FK__reservati__vehic__4B7734FF">
       <ColNames>vehicleId</ColNames>
       <CreatedTimestamp>2024-12-18.19:51:04.453</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.490</ModifiedTimestamp>
@@ -17739,7 +17778,7 @@ Name</ColNames>
       <RefTableId>434100587</RefTableId>
       <RefTableName>vehicles</RefTableName>
     </foreign-key>
-    <foreign-key id="5715" parent="5588" name="FK_Reservations_Users">
+    <foreign-key id="5721" parent="5589" name="FK_Reservations_Users">
       <ColNames>userId</ColNames>
       <CreatedTimestamp>2024-12-19.13:22:41.127</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-19.13:22:41.127</ModifiedTimestamp>
@@ -17748,7 +17787,7 @@ Name</ColNames>
       <RefTableId>1362103893</RefTableId>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
-    <index id="5716" parent="5588" name="PK__tmp_ms_x__3213E83FED677A4E">
+    <index id="5722" parent="5589" name="PK__tmp_ms_x__3213E83FED677A4E">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17756,12 +17795,12 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5717" parent="5588" name="IX_Reservations_UserId">
+    <index id="5723" parent="5589" name="IX_Reservations_UserId">
       <ColNames>userId</ColNames>
       <Position>7</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5718" parent="5588" name="PK__tmp_ms_x__3213E83FED677A4E">
+    <key id="5724" parent="5589" name="PK__tmp_ms_x__3213E83FED677A4E">
       <CreatedTimestamp>2024-12-18.19:51:04.440</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.19:51:04.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17769,18 +17808,18 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__tmp_ms_x__3213E83FED677A4E</UnderlyingIndexName>
     </key>
-    <column id="5719" parent="5589" name="id">
+    <column id="5725" parent="5590" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(18)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5720" parent="5589" name="imageUrl">
+    <column id="5726" parent="5590" name="imageUrl">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <index id="5721" parent="5589" name="PK__vehicle___3213E83FA34D6045">
+    <index id="5727" parent="5590" name="PK__vehicle___3213E83FA34D6045">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17788,7 +17827,7 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5722" parent="5589" name="PK__vehicle___3213E83FA34D6045">
+    <key id="5728" parent="5590" name="PK__vehicle___3213E83FA34D6045">
       <CreatedTimestamp>2024-12-14.18:05:00.740</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-14.18:05:00.740</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17796,18 +17835,18 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__vehicle___3213E83FA34D6045</UnderlyingIndexName>
     </key>
-    <column id="5723" parent="5590" name="id">
+    <column id="5729" parent="5591" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(7)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5724" parent="5590" name="name">
+    <column id="5730" parent="5591" name="name">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <index id="5725" parent="5590" name="PK__vehicle___3213E83F12FF9EDD">
+    <index id="5731" parent="5591" name="PK__vehicle___3213E83F12FF9EDD">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17815,7 +17854,7 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5726" parent="5590" name="PK__vehicle___3213E83F12FF9EDD">
+    <key id="5732" parent="5591" name="PK__vehicle___3213E83F12FF9EDD">
       <CreatedTimestamp>2024-12-14.18:05:00.740</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-14.18:05:00.740</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17823,80 +17862,80 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__vehicle___3213E83F12FF9EDD</UnderlyingIndexName>
     </key>
-    <column id="5727" parent="5591" name="id">
+    <column id="5733" parent="5592" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(28)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5728" parent="5591" name="model">
+    <column id="5734" parent="5592" name="model">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5729" parent="5591" name="make">
+    <column id="5735" parent="5592" name="make">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5730" parent="5591" name="year">
+    <column id="5736" parent="5592" name="year">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5731" parent="5591" name="availability">
+    <column id="5737" parent="5592" name="availability">
       <Position>5</Position>
       <StoredType>bit|0s</StoredType>
       <DefaultConstraintId>466100701</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__avail__1BC821DD</DefaultConstraintName>
     </column>
-    <column id="5732" parent="5591" name="price">
+    <column id="5738" parent="5592" name="price">
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5733" parent="5591" name="createdAt">
+    <column id="5739" parent="5592" name="createdAt">
       <Position>7</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>482100758</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__creat__1CBC4616</DefaultConstraintName>
     </column>
-    <column id="5734" parent="5591" name="updatedAt">
+    <column id="5740" parent="5592" name="updatedAt">
       <Position>8</Position>
       <StoredType>datetime|0s</StoredType>
       <DefaultConstraintId>498100815</DefaultConstraintId>
       <DefaultConstraintName>DF__tmp_ms_xx__updat__1DB06A4F</DefaultConstraintName>
     </column>
-    <column id="5735" parent="5591" name="typeId">
+    <column id="5741" parent="5592" name="typeId">
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5736" parent="5591" name="image">
+    <column id="5742" parent="5592" name="image">
       <Position>11</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <default id="5737" parent="5591" name="DF__tmp_ms_xx__avail__1BC821DD">
+    <default id="5743" parent="5592" name="DF__tmp_ms_xx__avail__1BC821DD">
       <ColNames>availability</ColNames>
       <DefaultExpression>1</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.12:27:51.697</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>466100701</ObjectId>
     </default>
-    <default id="5738" parent="5591" name="DF__tmp_ms_xx__creat__1CBC4616">
+    <default id="5744" parent="5592" name="DF__tmp_ms_xx__creat__1CBC4616">
       <ColNames>createdAt</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.12:27:51.697</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>482100758</ObjectId>
     </default>
-    <default id="5739" parent="5591" name="DF__tmp_ms_xx__updat__1DB06A4F">
+    <default id="5745" parent="5592" name="DF__tmp_ms_xx__updat__1DB06A4F">
       <ColNames>updatedAt</ColNames>
       <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2024-12-18.12:27:51.697</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>498100815</ObjectId>
     </default>
-    <foreign-key id="5740" parent="5591" name="FK_vehicles_vehicle_types">
+    <foreign-key id="5746" parent="5592" name="FK_vehicles_vehicle_types">
       <ColNames>typeId</ColNames>
       <CreatedTimestamp>2024-12-18.12:27:51.850</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.12:27:51.873</ModifiedTimestamp>
@@ -17905,7 +17944,7 @@ Name</ColNames>
       <RefTableId>1269579561</RefTableId>
       <RefTableName>vehicleTypes</RefTableName>
     </foreign-key>
-    <index id="5741" parent="5591" name="PK__tmp_ms_x__3213E83F1553B98C">
+    <index id="5747" parent="5592" name="PK__tmp_ms_x__3213E83F1553B98C">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17913,27 +17952,27 @@ Name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5742" parent="5591" name="IX_Vehicles_Model">
+    <index id="5748" parent="5592" name="IX_Vehicles_Model">
       <ColNames>model</ColNames>
       <Position>4</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5743" parent="5591" name="IX_Vehicles_Make">
+    <index id="5749" parent="5592" name="IX_Vehicles_Make">
       <ColNames>make</ColNames>
       <Position>5</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5744" parent="5591" name="IX_Vehicles_TypeId">
+    <index id="5750" parent="5592" name="IX_Vehicles_TypeId">
       <ColNames>typeId</ColNames>
       <Position>6</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5745" parent="5591" name="IX_Vehicles_Availability">
+    <index id="5751" parent="5592" name="IX_Vehicles_Availability">
       <ColNames>availability</ColNames>
       <Position>7</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5746" parent="5591" name="PK__tmp_ms_x__3213E83F1553B98C">
+    <key id="5752" parent="5592" name="PK__tmp_ms_x__3213E83F1553B98C">
       <CreatedTimestamp>2024-12-18.12:27:51.693</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-18.12:27:51.693</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17941,110 +17980,153 @@ Name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__tmp_ms_x__3213E83F1553B98C</UnderlyingIndexName>
     </key>
-    <column id="5747" parent="5592" name="ReservationId">
+    <column id="5753" parent="5593" name="Id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1(3)</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5754" parent="5593" name="amount">
+      <Position>2</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5755" parent="5593" name="userId">
+      <Position>3</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <foreign-key id="5756" parent="5593" name="FK_Wallet_Users">
+      <ColNames>userId</ColNames>
+      <CreatedTimestamp>2025-01-08.22:19:08.780</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-08.22:19:08.780</ModifiedTimestamp>
+      <ObjectId>942626401</ObjectId>
+      <OnDelete>cascade</OnDelete>
+      <RefColNames>Id</RefColNames>
+      <RefTableId>1362103893</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+    </foreign-key>
+    <index id="5757" parent="5593" name="PK_wallet">
+      <Clustering>1</Clustering>
+      <ColNames>Id</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5758" parent="5593" name="PK_wallet">
+      <CreatedTimestamp>2025-01-08.22:18:45.210</CreatedTimestamp>
+      <ModifiedTimestamp>2025-01-08.22:18:45.210</ModifiedTimestamp>
+      <ObjectId>926626344</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_wallet</UnderlyingIndexName>
+    </key>
+    <column id="5759" parent="5594" name="ReservationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5748" parent="5592" name="StartDate">
+    <column id="5760" parent="5594" name="StartDate">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5749" parent="5592" name="EndDate">
+    <column id="5761" parent="5594" name="EndDate">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5750" parent="5592" name="Status">
+    <column id="5762" parent="5594" name="Status">
       <Position>4</Position>
       <StoredType>varchar(20 char)|0s</StoredType>
     </column>
-    <column id="5751" parent="5592" name="totalPrice">
+    <column id="5763" parent="5594" name="totalPrice">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5752" parent="5592" name="VehicleId">
+    <column id="5764" parent="5594" name="AmountPayed">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5753" parent="5592" name="Model">
+    <column id="5765" parent="5594" name="VehicleId">
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StoredType>varchar(255 char)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5754" parent="5592" name="Make">
+    <column id="5766" parent="5594" name="Model">
       <NotNull>1</NotNull>
       <Position>8</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5755" parent="5592" name="Availability">
+    <column id="5767" parent="5594" name="Make">
+      <NotNull>1</NotNull>
       <Position>9</Position>
+      <StoredType>varchar(255 char)|0s</StoredType>
+    </column>
+    <column id="5768" parent="5594" name="Availability">
+      <Position>10</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5756" parent="5592" name="UserId">
-      <NotNull>1</NotNull>
-      <Position>10</Position>
-      <StoredType>nvarchar(450 char)|0s</StoredType>
-    </column>
-    <column id="5757" parent="5592" name="FullName">
+    <column id="5769" parent="5594" name="UserId">
       <NotNull>1</NotNull>
       <Position>11</Position>
+      <StoredType>nvarchar(450 char)|0s</StoredType>
+    </column>
+    <column id="5770" parent="5594" name="FullName">
+      <NotNull>1</NotNull>
+      <Position>12</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>
-    <column id="5758" parent="5592" name="Email">
-      <Position>12</Position>
+    <column id="5771" parent="5594" name="Email">
+      <Position>13</Position>
       <StoredType>nvarchar(256 char)|0s</StoredType>
     </column>
-    <column id="5759" parent="5593" name="VehicleId">
+    <column id="5772" parent="5595" name="VehicleId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5760" parent="5593" name="model">
+    <column id="5773" parent="5595" name="model">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5761" parent="5593" name="make">
+    <column id="5774" parent="5595" name="make">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5762" parent="5593" name="year">
+    <column id="5775" parent="5595" name="year">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5763" parent="5593" name="availability">
+    <column id="5776" parent="5595" name="availability">
       <Position>5</Position>
       <StoredType>bit|0s</StoredType>
     </column>
-    <column id="5764" parent="5593" name="price">
+    <column id="5777" parent="5595" name="price">
       <Position>6</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5765" parent="5593" name="CreatedAt">
+    <column id="5778" parent="5595" name="CreatedAt">
       <Position>7</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="5766" parent="5593" name="UpdatedAt">
+    <column id="5779" parent="5595" name="UpdatedAt">
       <Position>8</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="5767" parent="5593" name="VehicleTypeId">
+    <column id="5780" parent="5595" name="VehicleTypeId">
       <NotNull>1</NotNull>
       <Position>9</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5768" parent="5593" name="VehicleType">
+    <column id="5781" parent="5595" name="VehicleType">
       <NotNull>1</NotNull>
       <Position>10</Position>
       <StoredType>varchar(255 char)|0s</StoredType>
     </column>
-    <column id="5769" parent="5593" name="VehicleImage">
+    <column id="5782" parent="5595" name="VehicleImage">
       <Position>11</Position>
       <StoredType>nvarchar(max)|0s</StoredType>
     </column>

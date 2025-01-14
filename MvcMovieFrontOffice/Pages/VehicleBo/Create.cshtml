@@ -163,7 +163,7 @@
         <strong>Add New Vehicle's type</strong>
     </div>
     <div class="card-body card-block">
-        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <form enctype="multipart/form-data" class="form-horizontal">
             <div class="row form-group">
                 <div class="col col-md-3">
                     <label for="model" class=" form-control-label">Type</label>
@@ -176,8 +176,47 @@
         </form>
     </div>
     <div class="card-footer">
-        <button type="submit" class="btn btn-primary btn-sm">
+        <button type="submit" id="addtypebtn" class="btn btn-primary btn-sm">
             <i class="fa fa-dot-circle-o"></i> Submit
         </button>
     </div>
 </div>
+
+<script>
+    document.getElementById("addtypebtn").addEventListener("click", async function(event) {
+        event.preventDefault();
+
+        const typeInput = document.getElementById("type").value.trim();
+
+        if (!typeInput) {
+            alert("Please enter a type.");
+            return;
+        }
+        
+        const typeData = {
+            id: 0, 
+            name: typeInput,
+        };
+        
+        try {
+            const response = await fetch("http://localhost:5259/api/vehicles/types", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(typeData)
+            });
+
+            if (response.ok) {
+                alert("Vehicle type added successfully!");
+                window.location.reload();
+            } else {
+                const errorMessage = await response.text();
+                alert("Error: " + errorMessage);
+            }
+        } catch (error) {
+            console.error("Network error:", error);
+            alert("Error while adding vehicle type.");
+        }
+    });
+</script>

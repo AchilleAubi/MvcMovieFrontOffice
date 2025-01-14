@@ -296,6 +296,20 @@ public class VehicleService(string? connectionString)
             await command.ExecuteNonQueryAsync();
         }
     }
+    
+    public async Task CreateVehicleTypesAsync(VehicleType type)
+    {
+        var query = @"INSERT INTO VehicleTypes (Name) VALUES (@Name)";
+
+        using (var connection = new SqlConnection(_connectionString))
+        using (var command = new SqlCommand(query, connection))
+        {
+            command.Parameters.AddWithValue("@Name", type.Name);
+
+            await connection.OpenAsync();
+            await command.ExecuteNonQueryAsync();
+        }
+    }
 
     public async Task UpdateVehicleAsync(Vehicle vehicle)
     {
